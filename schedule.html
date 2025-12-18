@@ -1,0 +1,267 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Schedule a Session | Mindful Horizons</title>
+  <link rel="stylesheet" href="output.css">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="vendor/fontawesome/css/all.min.css">
+</head>
+<body class="min-h-screen flex flex-col bg-gradient-to-b from-blue-50 via-primary/10 to-white text-accent">
+  <a href="#main" class="skip-link">Skip to content</a>
+  <custom-navbar></custom-navbar>
+
+  <main id="main" class="flex-1 px-4 md:px-6 py-12 md:py-16">
+    <div class="max-w-4xl mx-auto space-y-10">
+    <header class="text-center">
+      <div class="relative overflow-hidden rounded-3xl bg-gradient-to-r from-primary to-secondary text-white p-8 md:p-12 shadow-2xl border border-primary/15">
+        <div class="absolute -top-20 -right-24 w-72 h-72 rounded-full bg-white/10 blur-2xl"></div>
+        <div class="absolute -bottom-24 -left-28 w-80 h-80 rounded-full bg-black/10 blur-2xl"></div>
+        <div class="relative z-10 max-w-3xl mx-auto space-y-3">
+          <h1 class="text-3xl md:text-4xl font-extrabold leading-tight">Schedule a Session</h1>
+          <p class="text-white/90 text-lg max-w-2xl mx-auto">We respond within 1-2 business days with times that match your needs.</p>
+        </div>
+      </div>
+    </header>
+
+    <div class="bg-red-50 border border-red-200 text-red-800 rounded-2xl px-5 py-4 flex items-start gap-3 shadow-sm text-sm md:text-base" role="note">
+      <i class="fa-solid fa-triangle-exclamation mt-1"></i>
+      <p>If you are in immediate danger, call 911. For crisis support, call or text 988. <a href="resources.html#emergency" class="underline font-semibold text-red-800">See emergency resources</a>.</p>
+    </div>
+
+    <section class="bg-white/90 backdrop-blur rounded-3xl shadow-lg p-6 md:p-8 border border-primary/15">
+      <h2 class="text-2xl font-bold text-secondary mb-2 text-center">Request an Appointment</h2>
+      <p class="text-gray-600 mb-6 text-center">Share a few details and we will match you with a licensed professional.</p>
+
+      <form class="space-y-6" aria-label="Schedule request form">
+        <div>
+          <label for="full-name" class="block font-semibold text-secondary mb-1">Full name</label>
+          <input id="full-name" name="full-name" type="text" required class="w-full bg-white rounded-2xl border border-gray-200 px-4 py-3 text-base focus:outline-none focus:ring-2 focus:ring-primary/60 focus:border-primary/60" autocomplete="name">
+        </div>
+
+        <div class="grid md:grid-cols-2 gap-4">
+          <div>
+            <label for="contact-method" class="block font-semibold text-secondary mb-1">Best contact method</label>
+            <select id="contact-method" name="contact-method" class="w-full bg-white rounded-2xl border border-gray-200 px-4 py-3 text-base focus:outline-none focus:ring-2 focus:ring-primary/60 focus:border-primary/60">
+              <option>Email</option>
+              <option>Phone</option>
+            </select>
+          </div>
+          <div>
+            <label for="contact-value" class="block font-semibold text-secondary mb-1">Phone or email</label>
+            <input id="contact-value" name="contact-value" type="text" required class="w-full bg-white rounded-2xl border border-gray-200 px-4 py-3 text-base focus:outline-none focus:ring-2 focus:ring-primary/60 focus:border-primary/60" autocomplete="email">
+            <p class="text-xs text-gray-500 mt-1">Enter the contact that matches your selection.</p>
+          </div>
+        </div>
+
+        <div class="grid md:grid-cols-2 gap-4">
+          <div>
+            <label class="block font-semibold text-secondary mb-1">Age group</label>
+            <div class="flex flex-wrap gap-3">
+              <label class="inline-flex items-center gap-2">
+                <input type="radio" name="age" value="under-18" class="accent-primary">
+                <span>Under 18</span>
+              </label>
+              <label class="inline-flex items-center gap-2">
+                <input type="radio" name="age" value="18-plus" class="accent-primary" checked>
+                <span>18+</span>
+              </label>
+            </div>
+            <p class="text-xs text-gray-500 mt-1">If under 18: parent or guardian contact required.</p>
+          </div>
+
+          <div>
+            <label class="block font-semibold text-secondary mb-1">Urgency</label>
+            <div class="flex flex-wrap gap-2">
+              <button type="button" class="px-4 py-2 rounded-full border border-primary/30 bg-primary text-white text-sm font-semibold shadow hover:brightness-105 focus:outline-none focus:ring-2 focus:ring-primary/50 transition">This week</button>
+              <button type="button" class="px-4 py-2 rounded-full border border-primary/30 bg-white text-secondary text-sm font-semibold hover:bg-primary/10 focus:outline-none focus:ring-2 focus:ring-primary/40 transition">Within 2 weeks</button>
+              <button type="button" class="px-4 py-2 rounded-full border border-primary/30 bg-white text-secondary text-sm font-semibold hover:bg-primary/10 focus:outline-none focus:ring-2 focus:ring-primary/40 transition">No rush</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="grid md:grid-cols-2 gap-4">
+          <div>
+            <label class="block font-semibold text-secondary mb-1">Session type</label>
+            <select class="w-full bg-white rounded-2xl border border-gray-200 px-4 py-3 text-base focus:outline-none focus:ring-2 focus:ring-primary/60 focus:border-primary/60">
+              <option>Individual Therapy</option>
+              <option>Group Therapy</option>
+              <option>Family Counseling</option>
+              <option>Not sure, help me choose</option>
+            </select>
+          </div>
+          <div>
+            <label class="block font-semibold text-secondary mb-1">Format</label>
+            <select class="w-full bg-white rounded-2xl border border-gray-200 px-4 py-3 text-base focus:outline-none focus:ring-2 focus:ring-primary/60 focus:border-primary/60">
+              <option>In-person</option>
+              <option>Virtual</option>
+              <option>Either</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="grid md:grid-cols-2 gap-4">
+          <div>
+            <label class="block font-semibold text-secondary mb-1">Preferred time</label>
+            <select class="w-full bg-white rounded-2xl border border-gray-200 px-4 py-3 text-base focus:outline-none focus:ring-2 focus:ring-primary/60 focus:border-primary/60">
+              <option>Morning</option>
+              <option>Afternoon</option>
+              <option>Evening</option>
+            </select>
+          </div>
+          <div>
+            <label class="block font-semibold text-secondary mb-1">Days</label>
+            <select class="w-full bg-white rounded-2xl border border-gray-200 px-4 py-3 text-base focus:outline-none focus:ring-2 focus:ring-primary/60 focus:border-primary/60">
+              <option>Weekdays</option>
+              <option>Weekends</option>
+              <option>Either</option>
+            </select>
+          </div>
+        </div>
+
+        <div>
+          <label for="date-range" class="block font-semibold text-secondary mb-1">Preferred date range (optional)</label>
+          <input id="date-range" name="date-range" type="text" class="w-full bg-white rounded-2xl border border-gray-200 px-4 py-3 text-base focus:outline-none focus:ring-2 focus:ring-primary/60 focus:border-primary/60" placeholder="e.g., March 10-24">
+        </div>
+
+        <div>
+          <label for="reason" class="block font-semibold text-secondary mb-1">Reason for visit</label>
+          <select id="reason" name="reason" class="w-full bg-white rounded-2xl border border-gray-200 px-4 py-3 text-base focus:outline-none focus:ring-2 focus:ring-primary/60 focus:border-primary/60">
+            <option>Stress / Anxiety</option>
+            <option>Depression</option>
+            <option>Grief / Loss</option>
+            <option>Trauma</option>
+            <option>Family conflict</option>
+            <option>School stress</option>
+            <option>Other</option>
+          </select>
+        </div>
+
+        <div>
+          <label for="message" class="block font-semibold text-secondary mb-1">Anything you want us to know</label>
+          <textarea id="message" name="message" rows="4" class="w-full bg-white rounded-2xl border border-gray-200 px-4 py-3 text-base focus:outline-none focus:ring-2 focus:ring-primary/60 focus:border-primary/60" placeholder="Short note (optional)"></textarea>
+        </div>
+
+        <div class="space-y-2">
+          <label class="inline-flex items-start gap-2">
+            <input type="checkbox" required class="mt-1 accent-primary">
+            <span class="text-sm text-gray-700">I understand this is not emergency care.</span>
+          </label>
+          <label class="inline-flex items-start gap-2">
+            <input type="checkbox" class="mt-1 accent-primary">
+            <span class="text-sm text-gray-700">I understand this is a demo / school project.</span>
+          </label>
+        </div>
+
+        <div class="mt-6 pt-6 border-t border-primary/10 space-y-3">
+          <button type="submit" class="w-full rounded-full bg-primary text-white font-semibold py-3.5 shadow-md hover:brightness-105 focus:outline-none focus:ring-2 focus:ring-primary transition text-base">
+            Submit Request
+          </button>
+
+          <div class="rounded-2xl bg-green-50 border border-green-200 text-green-800 p-4 text-sm flex gap-2">
+            <i class="fa-solid fa-circle-check mt-1"></i>
+            <div>
+              <strong>After submitting:</strong><br>
+              Thanks, we received your request. We respond within 1-2 business days.<br>
+              If you do not hear back, please use the Contact page or call our office.
+            </div>
+          </div>
+        </div>
+      </form>
+    </section>
+
+    <div class="h-px w-full max-w-3xl mx-auto bg-gradient-to-r from-transparent via-primary/40 to-transparent"></div>
+
+    <section class="bg-white/90 backdrop-blur rounded-3xl shadow-md p-6 md:p-8 border border-primary/15">
+      <h3 class="text-xl font-semibold text-secondary mb-3 text-center">What to Expect</h3>
+      <div class="flex flex-col md:flex-row md:flex-wrap gap-4">
+        <div class="flex-1 min-w-[240px] rounded-2xl border border-primary/10 bg-primary/5 p-4 flex items-start gap-3">
+          <i class="fa-solid fa-clipboard-check text-primary text-lg mt-1"></i>
+          <div>
+            <p class="font-semibold text-secondary">Review</p>
+            <p class="text-gray-700 text-sm">We read your request and confirm availability.</p>
+          </div>
+        </div>
+        <div class="flex-1 min-w-[240px] rounded-2xl border border-primary/10 bg-primary/5 p-4 flex items-start gap-3">
+          <i class="fa-solid fa-calendar-check text-primary text-lg mt-1"></i>
+          <div>
+            <p class="font-semibold text-secondary">Options</p>
+            <p class="text-gray-700 text-sm">You get appointment times that fit your preferences.</p>
+          </div>
+        </div>
+        <div class="flex-1 min-w-[240px] rounded-2xl border border-primary/10 bg-primary/5 p-4 flex items-start gap-3">
+          <i class="fa-solid fa-lock text-primary text-lg mt-1"></i>
+          <div>
+            <p class="font-semibold text-secondary">Privacy</p>
+            <p class="text-gray-700 text-sm">Intake and consent forms are sent securely before your session.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="bg-white/90 backdrop-blur rounded-3xl shadow-md p-6 md:p-8 border border-primary/15">
+      <div class="flex items-center justify-between flex-wrap gap-3 mb-4">
+        <h3 class="text-xl font-semibold text-secondary">Quick Contact</h3>
+        <span class="text-xs font-semibold uppercase tracking-wide text-secondary/70">We reply in 1-2 business days</span>
+      </div>
+      <div class="grid sm:grid-cols-2 md:grid-cols-3 gap-4 text-gray-700 items-stretch">
+        <div class="rounded-2xl border border-primary/10 bg-primary/5 p-4 flex items-start gap-3">
+          <i class="fa-solid fa-phone text-primary mt-1"></i>
+          <div>
+            <p class="font-semibold text-secondary">Call</p>
+            <p>(555) 123-4567</p>
+          </div>
+        </div>
+        <div class="rounded-2xl border border-primary/10 bg-primary/5 p-4 flex items-start gap-3">
+          <i class="fa-solid fa-envelope text-primary mt-1"></i>
+          <div>
+            <p class="font-semibold text-secondary">Email</p>
+            <p>appointments@mindfulhorizons.example</p>
+          </div>
+        </div>
+        <div class="rounded-2xl border border-primary/10 bg-primary/5 p-4 flex items-start gap-3">
+          <i class="fa-solid fa-clock text-primary mt-1"></i>
+          <div>
+            <p class="font-semibold text-secondary">Hours</p>
+            <p>Mon-Fri, 9am-6pm</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h3 class="text-2xl font-semibold text-secondary text-center mb-4">FAQ</h3>
+      <div class="w-24 h-1 bg-gradient-to-r from-primary to-secondary rounded-full mx-auto mb-6"></div>
+      <div class="space-y-3">
+        <details class="bg-white rounded-2xl border border-primary/15 p-5 shadow-sm hover:shadow-md transition">
+          <summary class="font-semibold text-secondary cursor-pointer">How long are sessions?</summary>
+          <p class="text-gray-700 mt-2">Individual: about 50 minutes. Group: about 90 minutes. Family: about 75 minutes.</p>
+        </details>
+        <details class="bg-white rounded-2xl border border-primary/15 p-5 shadow-sm hover:shadow-md transition">
+          <summary class="font-semibold text-secondary cursor-pointer">Do you accept insurance?</summary>
+          <p class="text-gray-700 mt-2">Yes, see accepted plans on the Counseling page. We also offer sliding scale self-pay.</p>
+        </details>
+        <details class="bg-white rounded-2xl border border-primary/15 p-5 shadow-sm hover:shadow-md transition">
+          <summary class="font-semibold text-secondary cursor-pointer">Can I do virtual sessions?</summary>
+          <p class="text-gray-700 mt-2">Yes, choose Virtual or Either in the format field.</p>
+        </details>
+        <details class="bg-white rounded-2xl border border-primary/15 p-5 shadow-sm hover:shadow-md transition">
+          <summary class="font-semibold text-secondary cursor-pointer">What if I am under 18?</summary>
+          <p class="text-gray-700 mt-2">Parent or guardian contact and consent are required. We will follow up with next steps.</p>
+        </details>
+        <details class="bg-white rounded-2xl border border-primary/15 p-5 shadow-sm hover:shadow-md transition">
+          <summary class="font-semibold text-secondary cursor-pointer">What if I need help sooner?</summary>
+          <p class="text-gray-700 mt-2">If urgent, call 988 or 911. For faster scheduling, select "This week" and we will prioritize if possible.</p>
+        </details>
+      </div>
+    </section>
+    </div>
+  </main>
+
+  <custom-footer></custom-footer>
+  <script src="components/navbar.js" defer></script>
+  <script src="components/footer.js" defer></script>
+  <script src="script.js" defer></script>
+</body>
+</html>

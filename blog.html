@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Mindful Horizons Blog | Mindful Horizons Initiative</title>
+
+  <link rel="stylesheet" href="output.css">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="vendor/fontawesome/css/all.min.css">
+  <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+</head>
+<body class="bg-light text-gray-800 font-sans antialiased">
+
+  <!-- Skip link -->
+  <a href="#main-content" class="sr-only focus-not-sr-only p-2 rounded bg-secondary text-white m-4">Skip to main content</a>
+
+  <!-- Navbar (custom element + noscript fallback) -->
+  <custom-navbar></custom-navbar>
+  <noscript>
+    <nav role="navigation" class="bg-secondary text-white p-4">
+      <div class="container mx-auto flex justify-center">
+        <ul class="flex gap-6">
+          <li><a href="index.html" class="font-semibold">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="resources.html">Resources</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+  </noscript>
+
+  <main id="main-content" class="container mx-auto px-6 py-12" role="main">
+
+    <!-- Blog Header -->
+    <section class="blog-header mb-16 text-center">
+      <div class="relative overflow-hidden rounded-3xl bg-gradient-to-r from-primary to-secondary p-8 md:p-12 shadow-2xl">
+        <div class="absolute -right-24 -top-24 w-64 h-64 rounded-full bg-white/10 animate-pulse"></div>
+        <div class="absolute -left-24 -bottom-24 w-72 h-72 rounded-full bg-white/10 animate-pulse"></div>
+
+        <div class="relative z-10 max-w-3xl mx-auto">
+          <h1 class="text-3xl md:text-5xl font-bold text-white mb-4 drop-shadow-lg">Mindful Horizons Blog</h1>
+          <p class="text-lg md:text-xl text-white/90 mb-6">Evidence-based articles on mental health, wellness, and recovery</p>
+          <a href="#recent-articles" class="inline-block bg-accent hover:bg-secondary text-white font-semibold px-6 py-3 rounded-lg transition duration-300 shadow-md">
+            Explore Articles
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Featured Article -->
+    <section class="featured-article mb-16">
+      <div class="bg-white rounded-3xl shadow-2xl hover:shadow-3xl transition transform hover:-translate-y-1 duration-300 overflow-hidden">
+        <div class="flex flex-col md:flex-row">
+          <!-- Image -->
+          <div class="md:w-1/2 relative">
+            <img src="assets/nature-hero.jpg" alt="Featured article" class="w-full h-full object-cover md:max-h-[420px]">
+            <div class="absolute inset-0 bg-gradient-to-t from-black/25 to-transparent"></div>
+          </div>
+
+          <!-- Content -->
+          <div class="md:w-1/2 p-8 md:p-12 flex flex-col justify-center">
+            <span class="text-primary font-semibold uppercase tracking-wide text-sm mb-2">Featured</span>
+            <h2 class="text-2xl md:text-3xl font-bold text-secondary mb-4">5 Mindfulness Techniques for Daily Stress</h2>
+            <p class="text-gray-700 mb-6 leading-relaxed">Simple practices to help center yourself during stressful moments. Learn grounding techniques, breathing exercises, and more to manage daily anxiety.</p>
+            <div class="flex items-center text-gray-500 text-sm mb-6 gap-4">
+              <span>By Dr. Sarah Thompson</span>
+              <span class="inline-flex items-center"><i class="far fa-calendar mr-2"></i> June 15, 2023</span>
+            </div>
+            <a href="blog/mindfulness-techniques.html" class="inline-block bg-secondary hover:bg-accent text-white font-semibold px-6 py-3 rounded-lg shadow-md transition transform hover:-translate-y-1 hover:scale-105">
+              Read Article
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Blog Categories -->
+    <section class="blog-categories mb-16">
+      <h2 class="text-2xl md:text-3xl font-bold text-secondary mb-8 text-center">Browse by Category</h2>
+      <div class="grid gap-6 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-4">
+        <a href="#self-care" class="category-card group bg-white p-6 rounded-2xl shadow-lg hover:shadow-2xl transition transform hover:-translate-y-1">
+          <div class="w-16 h-16 mx-auto rounded-full bg-gradient-to-br from-primary to-secondary flex items-center justify-center text-white text-2xl shadow-lg mb-4 transition-transform group-hover:scale-110">
+            <i class="fas fa-heart"></i>
+          </div>
+          <h3 class="font-semibold text-secondary text-center group-hover:text-accent transition-colors">Self-Care</h3>
+        </a>
+
+        <a href="#community" class="category-card group bg-white p-6 rounded-2xl shadow-lg hover:shadow-2xl transition transform hover:-translate-y-1">
+          <div class="w-16 h-16 mx-auto rounded-full bg-gradient-to-br from-primary to-secondary flex items-center justify-center text-white text-2xl shadow-lg mb-4 transition-transform group-hover:scale-110">
+            <i class="fas fa-users"></i>
+          </div>
+          <h3 class="font-semibold text-secondary text-center group-hover:text-accent transition-colors">Community</h3>
+        </a>
+
+        <a href="#awareness" class="category-card group bg-white p-6 rounded-2xl shadow-lg hover:shadow-2xl transition transform hover:-translate-y-1">
+          <div class="w-16 h-16 mx-auto rounded-full bg-gradient-to-br from-primary to-secondary flex items-center justify-center text-white text-2xl shadow-lg mb-4 transition-transform group-hover:scale-110">
+            <i class="fas fa-lightbulb"></i>
+          </div>
+          <h3 class="font-semibold text-secondary text-center group-hover:text-accent transition-colors">Awareness</h3>
+        </a>
+
+        <a href="#treatment" class="category-card group bg-white p-6 rounded-2xl shadow-lg hover:shadow-2xl transition transform hover:-translate-y-1">
+          <div class="w-16 h-16 mx-auto rounded-full bg-gradient-to-br from-primary to-secondary flex items-center justify-center text-white text-2xl shadow-lg mb-4 transition-transform group-hover:scale-110">
+            <i class="fas fa-heartbeat"></i>
+          </div>
+          <h3 class="font-semibold text-secondary text-center group-hover:text-accent transition-colors">Treatment</h3>
+        </a>
+      </div>
+    </section>
+
+    <!-- Recent Articles -->
+    <section id="recent-articles" class="recent-articles mb-16">
+      <h2 class="text-2xl md:text-3xl font-bold text-secondary mb-8 text-center">Recent Articles</h2>
+      <div class="grid gap-8 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+        <!-- Article 1 -->
+        <article class="bg-white rounded-3xl overflow-hidden shadow-xl hover:shadow-2xl transition transform hover:-translate-y-1">
+          <div class="relative">
+            <img src="assets/people-article.jpeg" alt="Support group meeting" class="w-full h-48 object-cover">
+            <div class="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
+          </div>
+          <div class="p-6">
+            <span class="text-primary font-semibold uppercase text-sm tracking-wide">Community</span>
+            <h3 class="text-lg font-bold text-secondary mt-2 mb-3">Building a Support Network</h3>
+            <p class="text-gray-700 mb-4 leading-relaxed">How to create meaningful connections that support your mental health journey.</p>
+            <div class="flex items-center text-gray-500 text-sm mb-4 gap-4">
+              <span>By Marcus Johnson</span>
+              <span class="inline-flex items-center"><i class="far fa-calendar mr-2"></i> July 2, 2023</span>
+            </div>
+            <a href="blog/support-network.html" class="inline-block bg-secondary hover:bg-accent text-white font-semibold px-4 py-2 rounded-lg shadow-md transition transform hover:-translate-y-1 hover:scale-105">
+              Read Article →
+            </a>
+          </div>
+        </article>
+
+        <!-- Article 2 -->
+        <article class="bg-white rounded-3xl overflow-hidden shadow-xl hover:shadow-2xl transition transform hover:-translate-y-1">
+          <div class="relative">
+            <img src="assets/health-article.jpeg" alt="Person looking thoughtful" class="w-full h-48 object-cover">
+            <div class="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
+          </div>
+          <div class="p-6">
+            <span class="text-primary font-semibold uppercase text-sm tracking-wide">Awareness</span>
+            <h3 class="text-lg font-bold text-secondary mt-2 mb-3">Recognizing Depression Symptoms</h3>
+            <p class="text-gray-700 mb-4 leading-relaxed">Learn to identify the signs of depression in yourself and loved ones.</p>
+            <div class="flex items-center text-gray-500 text-sm mb-4 gap-4">
+              <span>By Dr. Amina Rodriguez</span>
+              <span class="inline-flex items-center"><i class="far fa-calendar mr-2"></i> July 10, 2023</span>
+            </div>
+            <a href="blog/depression-symptoms.html" class="inline-block bg-secondary hover:bg-accent text-white font-semibold px-4 py-2 rounded-lg shadow-md transition transform hover:-translate-y-1 hover:scale-105">
+              Read Article →
+            </a>
+          </div>
+        </article>
+
+        <!-- Article 3 -->
+        <article class="bg-white rounded-3xl overflow-hidden shadow-xl hover:shadow-2xl transition transform hover:-translate-y-1">
+          <div class="relative">
+            <img src="assets/workspace-article.jpeg" alt="Therapy session" class="w-full h-48 object-cover">
+            <div class="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
+          </div>
+          <div class="p-6">
+            <span class="text-primary font-semibold uppercase text-sm tracking-wide">Treatment</span>
+            <h3 class="text-lg font-bold text-secondary mt-2 mb-3">What to Expect in Therapy</h3>
+            <p class="text-gray-700 mb-4 leading-relaxed">Demystifying the therapy process and preparing for your first session.</p>
+            <div class="flex items-center text-gray-500 text-sm mb-4 gap-4">
+              <span>By Dr. Lisa Chen</span>
+              <span class="inline-flex items-center"><i class="far fa-calendar mr-2"></i> June 28, 2023</span>
+            </div>
+            <a href="blog/therapy-expectations.html" class="inline-block bg-secondary hover:bg-accent text-white font-semibold px-4 py-2 rounded-lg shadow-md transition transform hover:-translate-y-1 hover:scale-105">
+              Read Article →
+            </a>
+          </div>
+        </article>
+      </div>
+
+      <div class="text-center mt-8">
+        <a href="blog.html" class="inline-block bg-secondary hover:bg-accent text-white font-semibold px-6 py-3 rounded-lg transition duration-300 shadow-md">
+          View All Articles
+        </a>
+      </div>
+    </section>
+
+    <!-- Newsletter (polished, gradient + shapes) -->
+    <section class="newsletter relative bg-gradient-to-r from-primary to-secondary rounded-3xl overflow-hidden shadow-2xl mb-16">
+      <div class="absolute -top-16 -left-16 w-56 h-56 rounded-full bg-white/10 animate-pulse"></div>
+      <div class="absolute -bottom-16 -right-16 w-72 h-72 rounded-full bg-white/8 animate-pulse"></div>
+
+      <div class="max-w-2xl mx-auto p-12 text-center relative z-10">
+        <h2 class="text-3xl md:text-4xl font-bold text-white mb-4 drop-shadow-lg">Stay Updated</h2>
+        <p class="text-white/90 mb-8 leading-relaxed">Subscribe to our newsletter for new articles, mental health tips, and event announcements. Join our community and never miss an update.</p>
+        <form class="flex flex-col sm:flex-row gap-4">
+          <input type="email" placeholder="Your email address" aria-label="Email address"
+                 class="flex-grow px-6 py-3 rounded-lg focus:ring-2 focus:ring-white focus:outline-none text-gray-800 transition">
+          <button type="submit" class="bg-accent hover:bg-secondary text-white font-semibold px-6 py-3 rounded-lg shadow-md transition transform hover:-translate-y-1 hover:scale-105">
+            Subscribe
+          </button>
+        </form>
+        <p class="text-sm text-white/80 mt-4">We respect your privacy. Unsubscribe at any time.</p>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer (custom element + noscript fallback) -->
+  <custom-footer></custom-footer>
+  <noscript>
+    <footer class="bg-secondary text-white p-6 mt-12">
+      <div class="container mx-auto text-center">
+        &copy; 2025 Mindful Horizons Initiative. All rights reserved. — <a href="privacy.html" class="underline text-white">Privacy</a>
+      </div>
+    </footer>
+  </noscript>
+
+  <!-- Scripts (leave as-is if you have custom components) -->
+  <script src="components/navbar.js"></script>
+  <script src="components/footer.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
+

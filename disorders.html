@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Mental Health Conditions | Mindful Horizons Initiative</title>
+  <meta name="description" content="Learn about common mental health conditions, symptoms, and treatment options from Mindful Horizons Initiative.">
+
+    <link rel="stylesheet" href="output.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="vendor/fontawesome/css/all.min.css">
+
+  <style>
+    /* small utilities if not present in style.css */
+    .sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0,0,0,0); white-space: nowrap; border: 0; }
+    .focus-not-sr-only:focus { position: static; width: auto; height: auto; margin: 0; clip: auto; overflow: visible; white-space: normal; }
+    .container { max-width: 1200px; }
+  </style>
+</head>
+<body class="bg-light font-sans antialiased relative overflow-x-hidden text-[15px] md:text-[16px] leading-relaxed">
+
+  <a href="#main-content" class="sr-only focus-not-sr-only p-2 rounded bg-secondary text-white m-4">Skip to main content</a>
+
+
+
+  <custom-navbar></custom-navbar>
+
+  <!-- Decorative gradient shapes (non-critical, keeps same vibe) -->
+  <div aria-hidden="true" class="absolute top-0 left-0 w-96 h-96 bg-primary/30 rounded-full blur-3xl -z-10 -translate-x-1/4 -translate-y-1/4 animate-pulse"></div>
+  <div aria-hidden="true" class="absolute bottom-0 right-0 w-80 h-80 bg-secondary/25 rounded-full blur-3xl -z-10 translate-x-1/4 translate-y-1/4 animate-pulse"></div>
+
+  <main id="main-content" class="container mx-auto px-4 sm:px-6 lg:px-8 py-12 md:py-16" role="main">
+
+    <!-- Page Header -->
+    <header class="mb-10">
+      <div class="relative overflow-hidden rounded-3xl bg-gradient-to-r from-primary to-secondary text-white p-8 md:p-12 shadow-xl">
+        <div class="relative space-y-4 max-w-5xl mx-auto text-center">
+          <span class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/15 text-sm font-semibold tracking-wide uppercase text-white/90">Guides &amp; Education</span>
+          <h1 class="text-3xl md:text-5xl font-heading font-bold leading-tight text-white drop-shadow">Understanding Mental Health</h1>
+          <p class="text-lg md:text-xl text-white/90 max-w-3xl mx-auto">Learn about common mental health conditions, their signs, and treatment options. For emergencies, contact local services or a healthcare professional.</p>
+          <div class="flex flex-wrap justify-center gap-3 md:gap-4">
+            <a href="#common-conditions" class="px-5 py-3 rounded-full bg-white/90 hover:bg-white text-primary font-semibold hover:translate-y-[-1px] transition transform shadow-md focus:outline-none focus:ring-2 focus:ring-white/70">Jump to conditions</a>
+            <a href="resources.html#emergency" class="px-5 py-3 rounded-full bg-white/10 hover:bg-white/20 text-white font-semibold transition shadow-md focus:outline-none focus:ring-2 focus:ring-white/70">Emergency help</a>
+          </div>
+        </div>
+      </div>
+      <div class="mt-5 max-w-3xl mx-auto rounded-2xl border border-amber-200 bg-amber-50 px-4 py-3 text-amber-900 shadow-sm text-sm md:text-base flex items-start gap-3">
+        <i class="fa-solid fa-circle-info mt-1"></i>
+        <p><strong>Demo site for a school project:</strong> no appointments, chats, or emails are real. Not medical advice. If you are in danger, call 911 or text/call 988.</p>
+      </div>
+    </header>
+
+    <!-- Sticky jump nav -->
+    <nav aria-label="On this page" class="sticky top-3 z-20 mb-10">
+      <div class="max-w-4xl mx-auto bg-white/75 backdrop-blur-md border border-primary/10 rounded-2xl shadow-sm px-3 py-2 flex flex-wrap justify-center gap-2 text-sm">
+        <a href="#anxiety" class="px-3 py-1.5 rounded-full bg-primary/10 text-secondary font-semibold hover:bg-primary/20 hover:shadow-sm transition focus:outline-none focus:ring-2 focus:ring-primary/50">Anxiety</a>
+        <a href="#depression" class="px-3 py-1.5 rounded-full bg-primary/10 text-secondary font-semibold hover:bg-primary/20 hover:shadow-sm transition focus:outline-none focus:ring-2 focus:ring-primary/50">Depression</a>
+        <a href="#ptsd" class="px-3 py-1.5 rounded-full bg-primary/10 text-secondary font-semibold hover:bg-primary/20 hover:shadow-sm transition focus:outline-none focus:ring-2 focus:ring-primary/50">PTSD</a>
+        <a href="#bipolar" class="px-3 py-1.5 rounded-full bg-primary/10 text-secondary font-semibold hover:bg-primary/20 hover:shadow-sm transition focus:outline-none focus:ring-2 focus:ring-primary/50">Bipolar</a>
+        <a href="#ocd" class="px-3 py-1.5 rounded-full bg-primary/10 text-secondary font-semibold hover:bg-primary/20 hover:shadow-sm transition focus:outline-none focus:ring-2 focus:ring-primary/50">OCD</a>
+        <a href="#schizophrenia" class="px-3 py-1.5 rounded-full bg-primary/10 text-secondary font-semibold hover:bg-primary/20 hover:shadow-sm transition focus:outline-none focus:ring-2 focus:ring-primary/50">Schizophrenia</a>
+      </div>
+    </nav>
+
+    <!-- Condition Cards Grid -->
+    <section aria-labelledby="common-conditions" class="mb-16">
+      <h2 id="common-conditions" class="sr-only">Common Mental Health Conditions</h2>
+
+      <div class="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <!-- Anxiety -->
+        <article class="bg-white/90 backdrop-blur rounded-3xl shadow-lg overflow-hidden hover:shadow-2xl transition transform hover:-translate-y-1 relative group border border-primary/10" aria-labelledby="anx-card-title">
+          <div class="absolute inset-x-0 bottom-0 h-1 bg-gradient-to-r from-primary to-secondary opacity-0 group-hover:opacity-100 transition"></div>
+          <img src="assets/Medation.jpeg" alt="Abstract illustration for anxiety" class="w-full h-44 object-cover" loading="lazy">
+          <div class="p-6 space-y-3 min-h-[220px] flex flex-col">
+            <div class="flex items-center justify-between text-xs font-semibold uppercase tracking-wide text-secondary/80">
+              <span class="px-3 py-1 rounded-full bg-primary/10 text-secondary">Common</span>
+              <div class="flex items-center gap-2 text-gray-500"><i class="fa-solid fa-notes-medical"></i><i class="fa-solid fa-hand-holding-heart"></i><i class="fa-solid fa-comments"></i></div>
+            </div>
+            <h3 id="anx-card-title" class="text-2xl font-bold text-secondary">Anxiety Disorders</h3>
+            <p class="text-gray-700">Excessive fear or worry that interferes with daily activities.</p>
+            <div class="flex justify-between items-center pt-2 mt-auto">
+              <a href="#anxiety" class="text-primary font-semibold inline-flex items-center gap-2 px-4 py-2 rounded-full border border-primary/30 bg-primary/10 hover:bg-primary/20 transition transform hover:translate-x-0.5" aria-label="Learn more about anxiety disorders">Learn more <i class="fas fa-chevron-right text-xs"></i></a>
+              <a href="resources.html" class="text-secondary text-sm font-semibold hover:text-primary transition">Support</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Depression -->
+        <article class="bg-white/90 backdrop-blur rounded-3xl shadow-lg overflow-hidden hover:shadow-2xl transition transform hover:-translate-y-1 relative group border border-primary/10" aria-labelledby="dep-card-title">
+          <div class="absolute inset-x-0 bottom-0 h-1 bg-gradient-to-r from-secondary to-primary opacity-0 group-hover:opacity-100 transition"></div>
+          <img src="assets/depression-card.jpeg" alt="Abstract illustration for depression" class="w-full h-44 object-cover" loading="lazy">
+          <div class="p-6 space-y-3 min-h-[220px] flex flex-col">
+            <div class="flex items-center justify-between text-xs font-semibold uppercase tracking-wide text-secondary/80">
+              <span class="px-3 py-1 rounded-full bg-primary/10 text-secondary">Mood</span>
+              <div class="flex items-center gap-2 text-gray-500"><i class="fa-solid fa-notes-medical"></i><i class="fa-solid fa-hand-holding-heart"></i><i class="fa-solid fa-comments"></i></div>
+            </div>
+            <h3 id="dep-card-title" class="text-2xl font-bold text-secondary">Depression</h3>
+            <p class="text-gray-700">Persistent sadness and loss of interest in activities once enjoyed.</p>
+            <div class="flex justify-between items-center pt-2 mt-auto">
+              <a href="#depression" class="text-primary font-semibold inline-flex items-center gap-2 px-4 py-2 rounded-full border border-primary/30 bg-primary/10 hover:bg-primary/20 transition transform hover:translate-x-0.5" aria-label="Learn more about depression">Learn more <i class="fas fa-chevron-right text-xs"></i></a>
+              <a href="resources.html" class="text-secondary text-sm font-semibold hover:text-primary transition">Support</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- PTSD -->
+        <article class="bg-white/90 backdrop-blur rounded-3xl shadow-lg overflow-hidden hover:shadow-2xl transition transform hover:-translate-y-1 relative group border border-primary/10" aria-labelledby="ptsd-card-title">
+          <div class="absolute inset-x-0 bottom-0 h-1 bg-gradient-to-r from-secondary to-primary opacity-0 group-hover:opacity-100 transition"></div>
+          <img src="assets/ptsd-card.jpeg" alt="Abstract illustration for PTSD" class="w-full h-44 object-cover" loading="lazy">
+          <div class="p-6 space-y-3 min-h-[220px] flex flex-col">
+            <div class="flex items-center justify-between text-xs font-semibold uppercase tracking-wide text-secondary/80">
+              <span class="px-3 py-1 rounded-full bg-primary/10 text-secondary">Trauma</span>
+              <div class="flex items-center gap-2 text-gray-500"><i class="fa-solid fa-notes-medical"></i><i class="fa-solid fa-hand-holding-heart"></i><i class="fa-solid fa-comments"></i></div>
+            </div>
+            <h3 id="ptsd-card-title" class="text-2xl font-bold text-secondary">PTSD</h3>
+            <p class="text-gray-700">Symptoms that follow exposure to a traumatic event.</p>
+            <div class="flex justify-between items-center pt-2 mt-auto">
+              <a href="#ptsd" class="text-primary font-semibold inline-flex items-center gap-2 px-4 py-2 rounded-full border border-primary/30 bg-primary/10 hover:bg-primary/20 transition transform hover:translate-x-0.5" aria-label="Learn more about PTSD">Learn more <i class="fas fa-chevron-right text-xs"></i></a>
+              <a href="resources.html" class="text-secondary text-sm font-semibold hover:text-primary transition">Support</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Bipolar -->
+        <article class="bg-white/90 backdrop-blur rounded-3xl shadow-lg overflow-hidden hover:shadow-2xl transition transform hover:-translate-y-1 relative group border border-primary/10" aria-labelledby="bip-card-title">
+          <div class="absolute inset-x-0 bottom-0 h-1 bg-gradient-to-r from-primary to-secondary opacity-0 group-hover:opacity-100 transition"></div>
+          <img src="assets/bipolar-card.jpeg" alt="Abstract illustration for bipolar disorder" class="w-full h-44 object-cover" loading="lazy">
+          <div class="p-6 space-y-3 min-h-[220px] flex flex-col">
+            <div class="flex items-center justify-between text-xs font-semibold uppercase tracking-wide text-secondary/80">
+              <span class="px-3 py-1 rounded-full bg-primary/10 text-secondary">Mood</span>
+              <div class="flex items-center gap-2 text-gray-500"><i class="fa-solid fa-notes-medical"></i><i class="fa-solid fa-hand-holding-heart"></i><i class="fa-solid fa-comments"></i></div>
+            </div>
+            <h3 id="bip-card-title" class="text-2xl font-bold text-secondary">Bipolar Disorder</h3>
+            <p class="text-gray-700">Mood swings that include emotional highs (mania) and lows (depression).</p>
+            <div class="flex justify-between items-center pt-2 mt-auto">
+              <a href="#bipolar" class="text-primary font-semibold inline-flex items-center gap-2 px-4 py-2 rounded-full border border-primary/30 bg-primary/10 hover:bg-primary/20 transition transform hover:translate-x-0.5" aria-label="Learn more about bipolar disorder">Learn more <i class="fas fa-chevron-right text-xs"></i></a>
+              <a href="resources.html" class="text-secondary text-sm font-semibold hover:text-primary transition">Support</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- OCD -->
+        <article class="bg-white/90 backdrop-blur rounded-3xl shadow-lg overflow-hidden hover:shadow-2xl transition transform hover:-translate-y-1 relative group border border-primary/10" aria-labelledby="ocd-card-title">
+          <div class="absolute inset-x-0 bottom-0 h-1 bg-gradient-to-r from-secondary to-primary opacity-0 group-hover:opacity-100 transition"></div>
+          <img src="assets/ocd-card.jpg" alt="Abstract illustration for OCD" class="w-full h-44 object-cover" loading="lazy">
+          <div class="p-6 space-y-3 min-h-[220px] flex flex-col">
+            <div class="flex items-center justify-between text-xs font-semibold uppercase tracking-wide text-secondary/80">
+              <span class="px-3 py-1 rounded-full bg-primary/10 text-secondary">Behavior</span>
+              <div class="flex items-center gap-2 text-gray-500"><i class="fa-solid fa-notes-medical"></i><i class="fa-solid fa-hand-holding-heart"></i><i class="fa-solid fa-comments"></i></div>
+            </div>
+            <h3 id="ocd-card-title" class="text-2xl font-bold text-secondary">OCD</h3>
+            <p class="text-gray-700">Unwanted recurring thoughts (obsessions) and repetitive behaviors (compulsions).</p>
+            <div class="flex justify-between items-center pt-2 mt-auto">
+              <a href="#ocd" class="text-primary font-semibold inline-flex items-center gap-2 px-4 py-2 rounded-full border border-primary/30 bg-primary/10 hover:bg-primary/20 transition transform hover:translate-x-0.5" aria-label="Learn more about OCD">Learn more <i class="fas fa-chevron-right text-xs"></i></a>
+              <a href="resources.html" class="text-secondary text-sm font-semibold hover:text-primary transition">Support</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Schizophrenia -->
+        <article class="bg-white/90 backdrop-blur rounded-3xl shadow-lg overflow-hidden hover:shadow-2xl transition transform hover:-translate-y-1 relative group border border-primary/10" aria-labelledby="schiz-card-title">
+          <div class="absolute inset-x-0 bottom-0 h-1 bg-gradient-to-r from-primary to-secondary opacity-0 group-hover:opacity-100 transition"></div>
+          <img src="assets/schizophrenia-card.webp" alt="Abstract illustration for schizophrenia" class="w-full h-44 object-cover" loading="lazy">
+          <div class="p-6 space-y-3 min-h-[220px] flex flex-col">
+            <div class="flex items-center justify-between text-xs font-semibold uppercase tracking-wide text-secondary/80">
+              <span class="px-3 py-1 rounded-full bg-primary/10 text-secondary">Psychosis</span>
+              <div class="flex items-center gap-2 text-gray-500"><i class="fa-solid fa-notes-medical"></i><i class="fa-solid fa-hand-holding-heart"></i><i class="fa-solid fa-comments"></i></div>
+            </div>
+            <h3 id="schiz-card-title" class="text-2xl font-bold text-secondary">Schizophrenia</h3>
+            <p class="text-gray-700">Affects thinking, perception, and behavior; often includes hallucinations or delusions.</p>
+            <div class="flex justify-between items-center pt-2 mt-auto">
+              <a href="#schizophrenia" class="text-primary font-semibold inline-flex items-center gap-2 px-4 py-2 rounded-full border border-primary/30 bg-primary/10 hover:bg-primary/20 transition transform hover:translate-x-0.5" aria-label="Learn more about schizophrenia">Learn more <i class="fas fa-chevron-right text-xs"></i></a>
+              <a href="resources.html" class="text-secondary text-sm font-semibold hover:text-primary transition">Support</a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- Quick Help -->
+    <section class="mb-12">
+      <div class="rounded-3xl bg-primary text-white p-6 md:p-8 shadow-lg border border-white/20">
+        <div class="flex flex-col md:flex-row md:items-center md:justify-between gap-4">
+          <div>
+            <p class="text-sm uppercase tracking-wide text-white/80 font-semibold">Quick Help</p>
+            <h2 class="text-2xl font-bold">Need help now?</h2>
+            <p class="text-white/90">Call or text 988, or explore trusted helplines and treatment locators.</p>
+          </div>
+          <div class="flex flex-wrap gap-3">
+            <a href="tel:988" class="px-4 py-2 rounded-full bg-white text-primary font-semibold hover:translate-y-[-1px] transition shadow focus:outline-none focus:ring-2 focus:ring-white/70"><i class="fa-solid fa-phone-volume mr-2"></i>988 Crisis Line</a>
+            <a href="https://findtreatment.gov" class="px-4 py-2 rounded-full bg-white/15 text-white font-semibold border border-white/30 hover:bg-white/25 transition focus:outline-none focus:ring-2 focus:ring-white/60">SAMHSA Locator</a>
+            <a href="https://www.nami.org/Support-Education/Helpline" class="px-4 py-2 rounded-full bg-white/15 text-white font-semibold border border-white/30 hover:bg-white/25 transition focus:outline-none focus:ring-2 focus:ring-white/60">NAMI Helpline</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Detailed Sections -->
+    <section class="disorder-details space-y-10">
+
+      <!-- Anxiety -->
+      <article id="anxiety" class="bg-white/90 backdrop-blur p-6 md:p-10 rounded-3xl shadow-lg border border-primary/10">
+        <div class="flex flex-col md:flex-row gap-6">
+          <div class="md:w-1/3">
+            <img src="assets/anxiety.jpeg" alt="Person experiencing anxiety" class="w-full rounded-2xl shadow-md" loading="lazy">
+          </div>
+          <div class="md:w-2/3">
+            <h2 class="text-3xl font-heading font-bold text-secondary mb-4">Anxiety Disorders</h2>
+            <p class="text-gray-700 mb-4 max-w-3xl">Anxiety disorders involve more than temporary worry or fear. For people with anxiety disorders, symptoms can grow and interfere with daily life.</p>
+
+            <h3 class="text-xl font-bold text-secondary mb-2">Common Symptoms</h3>
+            <ul class="list-disc pl-5 mb-4 text-gray-700 space-y-1">
+              <li>Excessive worry that's difficult to control</li>
+              <li>Restlessness, feeling on edge</li>
+              <li>Difficulty concentrating</li>
+              <li>Sleep disturbances</li>
+              <li>Physical symptoms: rapid heartbeat, sweating, trembling</li>
+            </ul>
+
+            <h3 class="text-xl font-bold text-secondary mb-2">Treatment Options</h3>
+            <p class="text-gray-700 mb-4">Effective approaches include cognitive behavioral therapy (CBT), medication (such as SSRIs), relaxation and mindfulness practices, and lifestyle changes.</p>
+
+            <a href="resources.html" class="inline-block bg-primary hover:bg-secondary text-white font-semibold px-6 py-2 rounded-lg transition duration-300">Find Help for Anxiety</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- Depression -->
+      <article id="depression" class="bg-primary/5 backdrop-blur p-6 md:p-10 rounded-3xl shadow-lg border border-primary/10">
+        <div class="flex flex-col md:flex-row-reverse gap-6">
+          <div class="md:w-1/3">
+            <img src="assets/depression-detail.jpeg" alt="Person experiencing depression" class="w-full rounded-2xl shadow-md" loading="lazy">
+          </div>
+          <div class="md:w-2/3">
+            <h2 class="text-3xl font-heading font-bold text-secondary mb-4">Depression</h2>
+            <p class="text-gray-700 mb-4 max-w-3xl">Major depressive disorder is a common and serious condition that negatively affects how a person feels, thinks, and acts. It can cause persistent sadness and loss of interest in activities.</p>
+
+            <h3 class="text-xl font-bold text-secondary mb-2">Common Symptoms</h3>
+            <ul class="list-disc pl-5 mb-4 text-gray-700 space-y-1">
+              <li>Persistent sad, anxious, or "empty" mood</li>
+              <li>Loss of interest in activities</li>
+              <li>Changes in appetite or weight</li>
+              <li>Sleep problems (insomnia or oversleeping)</li>
+              <li>Fatigue or loss of energy, thoughts of death or suicide</li>
+            </ul>
+
+            <h3 class="text-xl font-bold text-secondary mb-2">Treatment Options</h3>
+            <p class="text-gray-700 mb-4">Common treatments include psychotherapy (CBT, interpersonal therapy), antidepressant medications, lifestyle interventions, and, in certain cases, other medical treatments under professional supervision.</p>
+
+            <a href="resources.html" class="inline-block bg-primary hover:bg-secondary text-white font-semibold px-6 py-2 rounded-lg transition duration-300">Find Help for Depression</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- PTSD -->
+      <article id="ptsd" class="bg-white/90 backdrop-blur p-6 md:p-10 rounded-3xl shadow-lg border border-primary/10">
+        <div class="flex flex-col md:flex-row gap-6">
+          <div class="md:w-1/3">
+            <img src="assets/ptsd-detail.jpeg" alt="Person reflecting after trauma" class="w-full rounded-2xl shadow-md" loading="lazy">
+          </div>
+          <div class="md:w-2/3">
+            <h2 class="text-3xl font-heading font-bold text-secondary mb-4">Post-Traumatic Stress Disorder (PTSD)</h2>
+            <p class="text-gray-700 mb-4 max-w-3xl">PTSD can develop after exposure to traumatic events. Symptoms may include intrusive memories, nightmares, avoidance, negative mood, and hyperarousal.</p>
+
+            <h3 class="text-xl font-bold text-secondary mb-2">Common Symptoms</h3>
+            <ul class="list-disc pl-5 mb-4 text-gray-700 space-y-1">
+              <li>Intrusive memories or flashbacks</li>
+              <li>Avoiding reminders of the event</li>
+              <li>Negative changes in mood and thinking</li>
+              <li>Heightened startle response or hypervigilance</li>
+            </ul>
+
+            <h3 class="text-xl font-bold text-secondary mb-2">Treatment Options</h3>
+            <p class="text-gray-700 mb-4">Trauma-focused therapies (e.g., prolonged exposure, CPT), EMDR, medication, and supportive group or individual therapy are common evidence-based options.</p>
+
+            <a href="resources.html" class="inline-block bg-primary hover:bg-secondary text-white font-semibold px-6 py-2 rounded-lg transition duration-300">Find Help for PTSD</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- Bipolar -->
+      <article id="bipolar" class="bg-primary/5 backdrop-blur p-6 md:p-10 rounded-3xl shadow-lg border border-primary/10">
+        <div class="flex flex-col md:flex-row-reverse gap-6">
+          <div class="md:w-1/3">
+            <img src="assets/bipolar-card.jpeg" alt="Person experiencing mood swings" class="w-full rounded-2xl shadow-md" loading="lazy">
+          </div>
+          <div class="md:w-2/3">
+            <h2 class="text-3xl font-heading font-bold text-secondary mb-4">Bipolar Disorder</h2>
+            <p class="text-gray-700 mb-4 max-w-3xl">Bipolar disorder causes significant shifts in mood, energy, activity levels, and the ability to carry out day-to-day tasks. These shifts include manic or hypomanic episodes and depressive episodes.</p>
+
+            <h3 class="text-xl font-bold text-secondary mb-2">Common Symptoms</h3>
+            <ul class="list-disc pl-5 mb-4 text-gray-700 space-y-1">
+              <li>Periods of unusually elevated mood (mania or hypomania)</li>
+              <li>Periods of depression with low energy and hopelessness</li>
+              <li>Impulsive or risky behaviors during manic phases</li>
+            </ul>
+
+            <h3 class="text-xl font-bold text-secondary mb-2">Treatment Options</h3>
+            <p class="text-gray-700 mb-4">Mood stabilizers, psychotherapy, psychoeducation, and close medical monitoring form the core of evidence-based management for bipolar disorder.</p>
+
+            <a href="resources.html" class="inline-block bg-primary hover:bg-secondary text-white font-semibold px-6 py-2 rounded-lg transition duration-300">Find Help for Bipolar Disorder</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- OCD -->
+      <article id="ocd" class="bg-white/90 backdrop-blur p-6 md:p-10 rounded-3xl shadow-lg border border-primary/10">
+        <div class="flex flex-col md:flex-row gap-6">
+          <div class="md:w-1/3">
+            <img src="assets/ocd-detail.jpeg" alt="Person managing OCD" class="w-full rounded-2xl shadow-md" loading="lazy">
+          </div>
+          <div class="md:w-2/3">
+            <h2 class="text-3xl font-heading font-bold text-secondary mb-4">Obsessive-Compulsive Disorder (OCD)</h2>
+            <p class="text-gray-700 mb-4 max-w-3xl">OCD involves unwanted intrusive thoughts (obsessions) and repetitive behaviors (compulsions) performed to reduce distress. These behaviors can be time-consuming and disruptive.</p>
+
+            <h3 class="text-xl font-bold text-secondary mb-2">Common Symptoms</h3>
+            <ul class="list-disc pl-5 mb-4 text-gray-700 space-y-1">
+              <li>Persistent intrusive thoughts or worries</li>
+              <li>Repetitive rituals (handwashing, checking)</li>
+              <li>Distress and interference with daily life</li>
+            </ul>
+
+            <h3 class="text-xl font-bold text-secondary mb-2">Treatment Options</h3>
+            <p class="text-gray-700 mb-4">Exposure and response prevention (ERP), a form of CBT, is the gold-standard therapy. Medication (SSRIs) can also help when combined with therapy.</p>
+
+            <a href="resources.html" class="inline-block bg-primary hover:bg-secondary text-white font-semibold px-6 py-2 rounded-lg transition duration-300">Find Help for OCD</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- Schizophrenia -->
+      <article id="schizophrenia" class="bg-primary/5 backdrop-blur p-6 md:p-10 rounded-3xl shadow-lg border border-primary/10">
+        <div class="flex flex-col md:flex-row-reverse gap-6">
+          <div class="md:w-1/3">
+            <img src="assets/schizophrenia-detail.jpeg" alt="Person receiving support for schizophrenia" class="w-full rounded-2xl shadow-md" loading="lazy">
+          </div>
+          <div class="md:w-2/3">
+            <h2 class="text-3xl font-heading font-bold text-secondary mb-4">Schizophrenia</h2>
+            <p class="text-gray-700 mb-4 max-w-3xl">Schizophrenia affects how a person thinks, feels, and behaves. Symptoms can include hallucinations, delusions, disorganized speech, and social withdrawal.</p>
+
+            <h3 class="text-xl font-bold text-secondary mb-2">Common Symptoms</h3>
+            <ul class="list-disc pl-5 mb-4 text-gray-700 space-y-1">
+              <li>Hallucinations (hearing or seeing things that aren't there)</li>
+              <li>Delusions (fixed false beliefs)</li>
+              <li>Disorganized thinking or speech</li>
+            </ul>
+
+            <h3 class="text-xl font-bold text-secondary mb-2">Treatment Options</h3>
+            <p class="text-gray-700 mb-4">Antipsychotic medications, psychosocial support, coordinated specialty care, and family education are commonly used to manage schizophrenia.</p>
+
+            <a href="resources.html" class="inline-block bg-primary hover:bg-secondary text-white font-semibold px-6 py-2 rounded-lg transition duration-300">Find Help for Schizophrenia</a>
+          </div>
+        </div>
+      </article>
+
+    </section>
+
+  </main>
+
+  <custom-footer></custom-footer>
+
+  <!-- Defer local component scripts -->
+  <script src="components/navbar.js" defer></script>
+  <script src="components/footer.js" defer></script>
+  <script src="script.js" defer></script>
+</body>
+</html>

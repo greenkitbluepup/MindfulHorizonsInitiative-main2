@@ -1,0 +1,314 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Meet Our Therapists | Mindful Horizons</title>
+  <link rel="stylesheet" href="output.css">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="vendor/fontawesome/css/all.min.css">
+</head>
+<body class="min-h-screen flex flex-col bg-gradient-to-b from-blue-50 via-primary/10 to-white text-accent">
+  <a href="#main" class="skip-link">Skip to content</a>
+  <custom-navbar></custom-navbar>
+
+  <main id="main" class="flex-1 px-4 md:px-6 py-12 md:py-16">
+    <div class="max-w-5xl mx-auto space-y-10">
+      <header class="text-center space-y-4">
+        <h1 class="text-3xl md:text-4xl font-extrabold text-secondary leading-tight">Meet Our Therapists</h1>
+        <p class="text-gray-700 max-w-3xl mx-auto text-lg">Learn about our team, specialties, and formats. Request a match and we will align you with a therapist who fits your needs.</p>
+        <div class="bg-red-50 text-red-800 border border-red-200 rounded-2xl px-4 py-3 inline-flex items-start gap-3 text-sm md:text-base" role="note">
+          <i class="fa-solid fa-triangle-exclamation mt-0.5"></i>
+          <div>
+            <p>If you are in immediate danger, call 911. For crisis support, call or text 988. <a href="resources.html#emergency" class="underline font-semibold">See emergency resources</a>.</p>
+            <p class="text-xs text-red-700 mt-1">This is an educational demo / school project.</p>
+          </div>
+        </div>
+      </header>
+
+      <section class="bg-white/90 backdrop-blur rounded-3xl shadow-md p-6 md:p-8 border border-primary/15 space-y-4">
+        <div class="flex flex-col md:flex-row md:items-center md:justify-between gap-4">
+          <div class="flex-1">
+            <label for="search" class="block text-sm font-semibold text-secondary mb-2">Search by name or specialty</label>
+            <div class="relative">
+              <i class="fa-solid fa-magnifying-glass text-gray-400 absolute left-3 top-3.5"></i>
+              <input id="search" type="search" class="w-full rounded-2xl border border-gray-200 bg-white px-10 py-3 text-base focus:outline-none focus:ring-2 focus:ring-primary/60 focus:border-primary/60" placeholder="Try &quot;anxiety&quot;, &quot;CBT&quot;, or a name">
+            </div>
+          </div>
+          <div class="flex gap-3 flex-wrap md:flex-nowrap">
+            <button class="px-4 py-2 rounded-full border border-primary/30 bg-white text-secondary text-sm font-semibold hover:bg-primary/10 focus:outline-none focus:ring-2 focus:ring-primary/40 transition">Specialty</button>
+            <button class="px-4 py-2 rounded-full border border-primary/30 bg-white text-secondary text-sm font-semibold hover:bg-primary/10 focus:outline-none focus:ring-2 focus:ring-primary/40 transition">Format</button>
+            <button class="px-4 py-2 rounded-full border border-primary/30 bg-white text-secondary text-sm font-semibold hover:bg-primary/10 focus:outline-none focus:ring-2 focus:ring-primary/40 transition">Age group</button>
+            <button class="px-4 py-2 rounded-full border border-primary/30 bg-white text-secondary text-sm font-semibold hover:bg-primary/10 focus:outline-none focus:ring-2 focus:ring-primary/40 transition">Language</button>
+            <button class="px-4 py-2 rounded-full border border-gray-300 bg-gray-50 text-secondary text-sm font-semibold hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-primary/30 transition">Clear filters</button>
+          </div>
+        </div>
+        <p class="text-sm text-gray-600">Filters are visual for this demo. Contact us if you want help choosing a therapist.</p>
+      </section>
+
+      <section class="space-y-4">
+        <div class="flex items-center justify-between flex-wrap gap-2">
+          <h2 class="text-2xl font-bold text-secondary">Therapist Directory</h2>
+          <span class="text-sm text-gray-600">Showing 6 demo profiles</span>
+        </div>
+        <div class="grid md:grid-cols-2 gap-6">
+          <!-- Card 1 -->
+          <article class="bg-white rounded-3xl shadow-md border border-primary/15 p-6 flex flex-col gap-4">
+            <div class="flex items-start justify-between gap-3">
+              <div>
+                <h3 class="text-xl font-semibold text-secondary">Jordan Lee, LCSW</h3>
+                <p class="text-sm text-gray-600">Clinical Therapist - Anxiety & Trauma Focus</p>
+              </div>
+              <span class="px-3 py-1 rounded-full bg-primary/10 text-primary text-xs font-semibold">Virtual + In-person</span>
+            </div>
+            <p class="text-gray-700 text-sm leading-relaxed">Jordan uses CBT and mindfulness-based approaches to help adults and teens build coping skills, process trauma, and feel more grounded in daily life.</p>
+            <div class="space-y-2 text-sm">
+              <p><strong class="text-secondary">Specialties:</strong> <span class="inline-flex flex-wrap gap-2"><span class="px-2 py-1 rounded-full bg-primary/10 text-secondary">Anxiety</span><span class="px-2 py-1 rounded-full bg-primary/10 text-secondary">Trauma</span><span class="px-2 py-1 rounded-full bg-primary/10 text-secondary">Depression</span><span class="px-2 py-1 rounded-full bg-primary/10 text-secondary">Mindfulness</span></span></p>
+              <p><strong class="text-secondary">Populations:</strong> Adults, teens, LGBTQ+ affirming</p>
+              <p><strong class="text-secondary">Approaches:</strong> CBT, DBT skills, mindfulness, trauma-informed</p>
+              <p><strong class="text-secondary">Formats:</strong> In-person (Springfield), virtual</p>
+              <p><strong class="text-secondary">Languages:</strong> English</p>
+              <p><strong class="text-secondary">Availability:</strong> Mornings, early evenings</p>
+              <p class="text-gray-600 italic">Accessibility: captions available for virtual sessions; sensory-friendly office space.</p>
+            </div>
+            <div class="flex flex-wrap gap-3">
+              <a href="schedule.html" class="px-5 py-3 rounded-full bg-primary text-white font-semibold hover:brightness-105 transition inline-flex items-center gap-2 focus:outline-none focus:ring-2 focus:ring-primary/60">
+                <i class="fa-solid fa-calendar-check"></i> Request appointment
+              </a>
+              <a href="contact.html" class="px-5 py-3 rounded-full bg-white text-secondary font-semibold border border-primary/30 hover:bg-primary/10 transition inline-flex items-center gap-2 focus:outline-none focus:ring-2 focus:ring-primary/40">
+                <i class="fa-solid fa-envelope"></i> Contact
+              </a>
+            </div>
+          </article>
+
+          <!-- Card 2 -->
+          <article class="bg-white rounded-3xl shadow-md border border-primary/15 p-6 flex flex-col gap-4">
+            <div class="flex items-start justify-between gap-3">
+              <div>
+                <h3 class="text-xl font-semibold text-secondary">Maria Torres, LMFT</h3>
+                <p class="text-sm text-gray-600">Family & Couples Therapist</p>
+              </div>
+              <span class="px-3 py-1 rounded-full bg-primary/10 text-primary text-xs font-semibold">Virtual</span>
+            </div>
+            <p class="text-gray-700 text-sm leading-relaxed">Maria supports couples and families through communication coaching, conflict resolution, and strengths-based, culturally responsive care.</p>
+            <div class="space-y-2 text-sm">
+              <p><strong class="text-secondary">Specialties:</strong> <span class="inline-flex flex-wrap gap-2"><span class="px-2 py-1 rounded-full bg-primary/10 text-secondary">Family therapy</span><span class="px-2 py-1 rounded-full bg-primary/10 text-secondary">Couples</span><span class="px-2 py-1 rounded-full bg-primary/10 text-secondary">Communication</span><span class="px-2 py-1 rounded-full bg-primary/10 text-secondary">Grief</span></span></p>
+              <p><strong class="text-secondary">Populations:</strong> Couples, families, parents, LGBTQ+ affirming</p>
+              <p><strong class="text-secondary">Approaches:</strong> Emotionally focused, solution-focused, narrative</p>
+              <p><strong class="text-secondary">Formats:</strong> Virtual, hybrid by request</p>
+              <p><strong class="text-secondary">Languages:</strong> English, Spanish</p>
+              <p><strong class="text-secondary">Availability:</strong> Evenings, Saturdays</p>
+              <p class="text-gray-600 italic">Accessibility: live captions enabled; flexible scheduling for caregivers.</p>
+            </div>
+            <div class="flex flex-wrap gap-3">
+              <a href="schedule.html" class="px-5 py-3 rounded-full bg-primary text-white font-semibold hover:brightness-105 transition inline-flex items-center gap-2 focus:outline-none focus:ring-2 focus:ring-primary/60">
+                <i class="fa-solid fa-calendar-check"></i> Request appointment
+              </a>
+              <a href="contact.html" class="px-5 py-3 rounded-full bg-white text-secondary font-semibold border border-primary/30 hover:bg-primary/10 transition inline-flex items-center gap-2 focus:outline-none focus:ring-2 focus:ring-primary/40">
+                <i class="fa-solid fa-envelope"></i> Contact
+              </a>
+            </div>
+          </article>
+
+          <!-- Card 3 -->
+          <article class="bg-white rounded-3xl shadow-md border border-primary/15 p-6 flex flex-col gap-4">
+            <div class="flex items-start justify-between gap-3">
+              <div>
+                <h3 class="text-xl font-semibold text-secondary">Avery Chen, PsyD</h3>
+                <p class="text-sm text-gray-600">Clinical Psychologist - Trauma & Mood</p>
+              </div>
+              <span class="px-3 py-1 rounded-full bg-primary/10 text-primary text-xs font-semibold">In-person + Virtual</span>
+            </div>
+            <p class="text-gray-700 text-sm leading-relaxed">Avery integrates trauma-informed care, DBT skills, and somatic awareness to support adults coping with PTSD, depression, and anxiety.</p>
+            <div class="space-y-2 text-sm">
+              <p><strong class="text-secondary">Specialties:</strong> <span class="inline-flex flex-wrap gap-2"><span class="px-2 py-1 rounded-full bg-primary/10 text-secondary">PTSD</span><span class="px-2 py-1 rounded-full bg-primary/10 text-secondary">Depression</span><span class="px-2 py-1 rounded-full bg-primary/10 text-secondary">Anxiety</span><span class="px-2 py-1 rounded-full bg-primary/10 text-secondary">Somatic</span></span></p>
+              <p><strong class="text-secondary">Populations:</strong> Adults, veterans, first responders</p>
+              <p><strong class="text-secondary">Approaches:</strong> DBT, ACT, trauma-informed, mindfulness</p>
+              <p><strong class="text-secondary">Formats:</strong> In-person, virtual</p>
+              <p><strong class="text-secondary">Languages:</strong> English, Mandarin</p>
+              <p><strong class="text-secondary">Availability:</strong> Afternoons, early evenings</p>
+              <p class="text-gray-600 italic">Accessibility: step-free office entry; accessible restrooms; captions for virtual.</p>
+            </div>
+            <div class="flex flex-wrap gap-3">
+              <a href="schedule.html" class="px-5 py-3 rounded-full bg-primary text-white font-semibold hover:brightness-105 transition inline-flex items-center gap-2 focus:outline-none focus:ring-2 focus:ring-primary/60">
+                <i class="fa-solid fa-calendar-check"></i> Request appointment
+              </a>
+              <a href="contact.html" class="px-5 py-3 rounded-full bg-white text-secondary font-semibold border border-primary/30 hover:bg-primary/10 transition inline-flex items-center gap-2 focus:outline-none focus:ring-2 focus:ring-primary/40">
+                <i class="fa-solid fa-envelope"></i> Contact
+              </a>
+            </div>
+          </article>
+
+          <!-- Card 4 -->
+          <article class="bg-white rounded-3xl shadow-md border border-primary/15 p-6 flex flex-col gap-4">
+            <div class="flex items-start justify-between gap-3">
+              <div>
+                <h3 class="text-xl font-semibold text-secondary">Priya Patel, LPC</h3>
+                <p class="text-sm text-gray-600">Therapist - Teens & Young Adults</p>
+              </div>
+              <span class="px-3 py-1 rounded-full bg-primary/10 text-primary text-xs font-semibold">Virtual</span>
+            </div>
+            <p class="text-gray-700 text-sm leading-relaxed">Priya helps teens and young adults navigate school stress, identity, and life transitions using strengths-based, culturally responsive care.</p>
+            <div class="space-y-2 text-sm">
+              <p><strong class="text-secondary">Specialties:</strong> <span class="inline-flex flex-wrap gap-2"><span class="px-2 py-1 rounded-full bg-primary/10 text-secondary">School stress</span><span class="px-2 py-1 rounded-full bg-primary/10 text-secondary">Identity</span><span class="px-2 py-1 rounded-full bg-primary/10 text-secondary">Anxiety</span><span class="px-2 py-1 rounded-full bg-primary/10 text-secondary">Depression</span></span></p>
+              <p><strong class="text-secondary">Populations:</strong> Teens, college students, LGBTQ+ affirming</p>
+              <p><strong class="text-secondary">Approaches:</strong> CBT, solution-focused, mindfulness</p>
+              <p><strong class="text-secondary">Formats:</strong> Virtual</p>
+              <p><strong class="text-secondary">Languages:</strong> English, Hindi</p>
+              <p><strong class="text-secondary">Availability:</strong> Late afternoons, evenings</p>
+              <p class="text-gray-600 italic">Accessibility: captions for virtual; flexible pacing for sensory needs.</p>
+            </div>
+            <div class="flex flex-wrap gap-3">
+              <a href="schedule.html" class="px-5 py-3 rounded-full bg-primary text-white font-semibold hover:brightness-105 transition inline-flex items-center gap-2 focus:outline-none focus:ring-2 focus:ring-primary/60">
+                <i class="fa-solid fa-calendar-check"></i> Request appointment
+              </a>
+              <a href="contact.html" class="px-5 py-3 rounded-full bg-white text-secondary font-semibold border border-primary/30 hover:bg-primary/10 transition inline-flex items-center gap-2 focus:outline-none focus:ring-2 focus:ring-primary/40">
+                <i class="fa-solid fa-envelope"></i> Contact
+              </a>
+            </div>
+          </article>
+
+          <!-- Card 5 -->
+          <article class="bg-white rounded-3xl shadow-md border border-primary/15 p-6 flex flex-col gap-4">
+            <div class="flex items-start justify-between gap-3">
+              <div>
+                <h3 class="text-xl font-semibold text-secondary">Samuel Green, LCSW</h3>
+                <p class="text-sm text-gray-600">Therapist - Stress, Grief, Life Changes</p>
+              </div>
+              <span class="px-3 py-1 rounded-full bg-primary/10 text-primary text-xs font-semibold">In-person</span>
+            </div>
+            <p class="text-gray-700 text-sm leading-relaxed">Samuel offers warm, practical support for adults facing grief, workplace stress, and major transitions, blending CBT and solution-focused approaches.</p>
+            <div class="space-y-2 text-sm">
+              <p><strong class="text-secondary">Specialties:</strong> <span class="inline-flex flex-wrap gap-2"><span class="px-2 py-1 rounded-full bg-primary/10 text-secondary">Grief</span><span class="px-2 py-1 rounded-full bg-primary/10 text-secondary">Stress</span><span class="px-2 py-1 rounded-full bg-primary/10 text-secondary">Career</span><span class="px-2 py-1 rounded-full bg-primary/10 text-secondary">Life transitions</span></span></p>
+              <p><strong class="text-secondary">Populations:</strong> Adults, professionals, caregivers</p>
+              <p><strong class="text-secondary">Approaches:</strong> CBT, solution-focused, strengths-based</p>
+              <p><strong class="text-secondary">Formats:</strong> In-person</p>
+              <p><strong class="text-secondary">Languages:</strong> English</p>
+              <p><strong class="text-secondary">Availability:</strong> Mornings, mid-day</p>
+              <p class="text-gray-600 italic">Accessibility: step-free office; quiet room option.</p>
+            </div>
+            <div class="flex flex-wrap gap-3">
+              <a href="schedule.html" class="px-5 py-3 rounded-full bg-primary text-white font-semibold hover:brightness-105 transition inline-flex items-center gap-2 focus:outline-none focus:ring-2 focus:ring-primary/60">
+                <i class="fa-solid fa-calendar-check"></i> Request appointment
+              </a>
+              <a href="contact.html" class="px-5 py-3 rounded-full bg-white text-secondary font-semibold border border-primary/30 hover:bg-primary/10 transition inline-flex items-center gap-2 focus:outline-none focus:ring-2 focus:ring-primary/40">
+                <i class="fa-solid fa-envelope"></i> Contact
+              </a>
+            </div>
+          </article>
+
+          <!-- Card 6 -->
+          <article class="bg-white rounded-3xl shadow-md border border-primary/15 p-6 flex flex-col gap-4">
+            <div class="flex items-start justify-between gap-3">
+              <div>
+                <h3 class="text-xl font-semibold text-secondary">Lena Brooks, PhD</h3>
+                <p class="text-sm text-gray-600">Clinical Director - Intake & Matching</p>
+              </div>
+              <span class="px-3 py-1 rounded-full bg-primary/10 text-primary text-xs font-semibold">Either format</span>
+            </div>
+            <p class="text-gray-700 text-sm leading-relaxed">Lena oversees intake and therapist matching. She collaborates with clients to clarify goals and routes them to clinicians who fit their preferences.</p>
+            <div class="space-y-2 text-sm">
+              <p><strong class="text-secondary">Specialties:</strong> <span class="inline-flex flex-wrap gap-2"><span class="px-2 py-1 rounded-full bg-primary/10 text-secondary">Intake</span><span class="px-2 py-1 rounded-full bg-primary/10 text-secondary">Assessment</span><span class="px-2 py-1 rounded-full bg-primary/10 text-secondary">Goal setting</span></span></p>
+              <p><strong class="text-secondary">Populations:</strong> Adults, families, teens</p>
+              <p><strong class="text-secondary">Approaches:</strong> Solution-focused, motivational interviewing</p>
+              <p><strong class="text-secondary">Formats:</strong> Virtual, in-person</p>
+              <p><strong class="text-secondary">Languages:</strong> English, ASL (basic)</p>
+              <p><strong class="text-secondary">Availability:</strong> Weekdays</p>
+              <p class="text-gray-600 italic">Accessibility: ASL-friendly intake; materials available in large print.</p>
+            </div>
+            <div class="flex flex-wrap gap-3">
+              <a href="schedule.html" class="px-5 py-3 rounded-full bg-primary text-white font-semibold hover:brightness-105 transition inline-flex items-center gap-2 focus:outline-none focus:ring-2 focus:ring-primary/60">
+                <i class="fa-solid fa-calendar-check"></i> Request appointment
+              </a>
+              <a href="contact.html" class="px-5 py-3 rounded-full bg-white text-secondary font-semibold border border-primary/30 hover:bg-primary/10 transition inline-flex items-center gap-2 focus:outline-none focus:ring-2 focus:ring-primary/40">
+                <i class="fa-solid fa-envelope"></i> Contact
+              </a>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="bg-white/90 backdrop-blur rounded-3xl shadow-md p-6 md:p-8 border border-primary/15">
+        <h2 class="text-2xl font-bold text-secondary mb-4 text-center">What to Expect</h2>
+        <div class="grid md:grid-cols-2 gap-4 text-gray-700">
+          <div class="rounded-2xl border border-primary/10 bg-primary/5 p-4 flex gap-3">
+            <i class="fa-solid fa-clipboard-check text-primary mt-1"></i>
+            <div>
+              <p class="font-semibold text-secondary">Simple intake</p>
+              <p>Submit your request, then we review goals, preferences, and format needs.</p>
+            </div>
+          </div>
+          <div class="rounded-2xl border border-primary/10 bg-primary/5 p-4 flex gap-3">
+            <i class="fa-solid fa-people-arrows text-primary mt-1"></i>
+            <div>
+              <p class="font-semibold text-secondary">Thoughtful matching</p>
+              <p>We propose a therapist whose specialty, culture-fit, and schedule align.</p>
+            </div>
+          </div>
+          <div class="rounded-2xl border border-primary/10 bg-primary/5 p-4 flex gap-3">
+            <i class="fa-solid fa-clock text-primary mt-1"></i>
+            <div>
+              <p class="font-semibold text-secondary">Session length</p>
+              <p>Typical sessions: 50 minutes; family/couples: 75-90 minutes.</p>
+            </div>
+          </div>
+          <div class="rounded-2xl border border-primary/10 bg-primary/5 p-4 flex gap-3">
+            <i class="fa-solid fa-lock text-primary mt-1"></i>
+            <div>
+              <p class="font-semibold text-secondary">Confidentiality</p>
+              <p>We respect your privacy; limited sharing only as required by law.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="bg-white/90 backdrop-blur rounded-3xl shadow-md p-6 md:p-8 border border-primary/15">
+        <h2 class="text-2xl font-bold text-secondary mb-4 text-center">Safety, Ethics, and Privacy</h2>
+        <div class="space-y-3 text-gray-700">
+          <p><strong class="text-secondary">Not emergency care:</strong> If you are in danger, call 911; for crisis, call/text 988.</p>
+          <p><strong class="text-secondary">Privacy:</strong> We protect your information and only share when you consent or when law requires.</p>
+          <p><strong class="text-secondary">Mandatory reporting:</strong> We must report risk of harm to self/others or abuse of minors/vulnerable adults.</p>
+          <p><strong class="text-secondary">Demo note:</strong> This is an educational demo / school project.</p>
+          <div class="flex flex-wrap gap-3">
+            <a href="privacy.html" class="px-4 py-2 rounded-full bg-white text-secondary font-semibold border border-primary/30 hover:bg-primary/10 transition focus:outline-none focus:ring-2 focus:ring-primary/40">Privacy</a>
+            <a href="accessibility.html" class="px-4 py-2 rounded-full bg-white text-secondary font-semibold border border-primary/30 hover:bg-primary/10 transition focus:outline-none focus:ring-2 focus:ring-primary/40">Accessibility</a>
+            <a href="resources.html" class="px-4 py-2 rounded-full bg-white text-secondary font-semibold border border-primary/30 hover:bg-primary/10 transition focus:outline-none focus:ring-2 focus:ring-primary/40">Resources</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="bg-white/90 backdrop-blur rounded-3xl shadow-md p-6 md:p-8 border border-primary/15">
+        <h2 class="text-2xl font-bold text-secondary mb-4 text-center">FAQ</h2>
+        <div class="space-y-3">
+          <details class="bg-white rounded-2xl border border-primary/15 p-5 shadow-sm hover:shadow-md transition">
+            <summary class="font-semibold text-secondary cursor-pointer">How do you match me with a therapist?</summary>
+            <p class="text-gray-700 mt-2">We consider your goals, specialty needs, format preference, availability, and any language or accessibility requests.</p>
+          </details>
+          <details class="bg-white rounded-2xl border border-primary/15 p-5 shadow-sm hover:shadow-md transition">
+            <summary class="font-semibold text-secondary cursor-pointer">Do you offer virtual sessions?</summary>
+            <p class="text-gray-700 mt-2">Yes. Most therapists offer virtual, and some offer hybrid or in-person options.</p>
+          </details>
+          <details class="bg-white rounded-2xl border border-primary/15 p-5 shadow-sm hover:shadow-md transition">
+            <summary class="font-semibold text-secondary cursor-pointer">What if I need a different therapist?</summary>
+            <p class="text-gray-700 mt-2">Tell us and we will rematch you. Your comfort and fit are important.</p>
+          </details>
+          <details class="bg-white rounded-2xl border border-primary/15 p-5 shadow-sm hover:shadow-md transition">
+            <summary class="font-semibold text-secondary cursor-pointer">Is this real clinical care?</summary>
+            <p class="text-gray-700 mt-2">No. This site is an educational demo / school project. For real care, contact a licensed provider.</p>
+          </details>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <custom-footer></custom-footer>
+  <script src="components/navbar.js" defer></script>
+  <script src="components/footer.js" defer></script>
+  <script src="script.js" defer></script>
+</body>
+</html>
+
+
+
+
+

@@ -1,0 +1,372 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Mindful Horizons Initiative | Mental Health Awareness</title>
+
+  <!-- Using local fonts via style.css -->
+
+  <!-- Tailwind output (keeps your build pipeline) -->
+  <link rel="stylesheet" href="output.css">
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="vendor/fontawesome/css/all.min.css">
+
+  <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+
+  <!-- Small utility styles for focus, reduced motion and micro-animations -->
+  <style>
+    :root{
+      --primary: #9fd3c7;
+      --secondary: #385170;
+      --accent: #142d4c;
+      --muted: #6b7280;
+      --card: #ffffff;
+      --glass: rgba(255,255,255,0.06);
+      --focus: 3px solid rgba(66,153,225,0.35);
+    }
+
+    html { 
+      scroll-behavior: smooth; 
+      font-family: "Inter", ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+      overflow-x: hidden; 
+    }
+    body { overflow-x: hidden; }
+
+    /* accessible skip link */
+    .sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0,0,0,0); white-space: nowrap; border: 0; }
+    .sr-only:focus, .sr-only:active { position: static; width: auto; height: auto; margin: 0; clip: auto; overflow: visible; white-space: normal; }
+
+    /* Floating icon animation (reduced for users who prefer reduced-motion) */
+    @media (prefers-reduced-motion: no-preference) {
+      .animate-float { animation: float 6s ease-in-out infinite; }
+      @keyframes float { 0%,100%{ transform: translateY(0); } 50% { transform: translateY(-12px); } }
+    }
+
+    /* subtle glass card */
+    .glass {
+      background: linear-gradient(180deg, rgba(255,255,255,0.85), rgba(255,255,255,0.80));
+      backdrop-filter: blur(6px);
+    }
+
+    /* improved focus */
+    .focus-ring:focus {
+      box-shadow: var(--focus);
+      outline: none;
+    }
+
+    a[href*="html"] { color: inherit; } /* avoid weird link overrides */
+
+    /* Ensure touch targets are at least 44x44px on mobile */
+    @media (max-width: 768px) {
+      button, a, input[type="submit"] {
+        min-height: 44px;
+      }
+    }
+  </style>
+</head>
+<body class="bg-gradient-to-b from-blue-50 via-primary/10 to-white text-gray-800 antialiased leading-relaxed">
+
+  <!-- Skip link -->
+  <a href="#main-content" class="sr-only focus:ring p-2 rounded text-white bg-secondary">Skip to main content</a>
+
+  <!-- Custom or fallback navbar -->
+  <custom-navbar></custom-navbar>
+  <noscript>
+    <header class="bg-white border-b">
+      <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+        <div class="flex items-center gap-4">
+          <a href="index.html" class="text-2xl font-extrabold text-accent" style="color:var(--accent)">Mindful Horizons</a>
+          <p class="text-sm text-gray-500">Mental Health Awareness</p>
+        </div>
+        <nav>
+          <ul class="flex gap-6 text-sm">
+            <li><a href="index.html" class="hover:underline">Home</a></li>
+            <li><a href="about.html" class="hover:underline">About</a></li>
+            <li><a href="resources.html" class="hover:underline">Resources</a></li>
+            <li><a href="blog.html" class="hover:underline">Blog</a></li>
+            <li><a href="testimonials.html" class="hover:underline">Testimonials</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+  </noscript>
+
+  <main id="main-content">
+    <!-- HERO -->
+    <section class="relative overflow-hidden">
+      <div class="bg-gradient-to-br from-[#E6FCF7] via-[#D8F3EC] to-[#E7F0FA]">
+        <div class="max-w-7xl mx-auto px-4 md:px-6 py-12 md:py-20 lg:py-28 xl:py-32">
+          <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 md:gap-10 items-center">
+            <div class="space-y-4 md:space-y-6">
+              <h1 class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold text-accent leading-tight">You are not alone<span class="text-primary">.</span></h1>
+              <p class="text-base md:text-lg lg:text-xl text-gray-700 max-w-2xl">Mindful Horizons connects you to reliable resources, compassionate communities, and licensed professionals — a calm place to start healing and build resilience.</p>
+
+              <div class="flex flex-col sm:flex-row gap-3 md:gap-4 mt-4 md:mt-6">
+                <a href="resources.html" class="inline-flex items-center justify-center px-5 md:px-6 py-3 rounded-full bg-white text-accent font-semibold shadow-lg hover:scale-105 hover:bg-white/90 transition transform focus-ring border-2 border-accent text-sm md:text-base">
+                  <i class="fas fa-hands-helping mr-2 md:mr-3"></i> Get Help Now
+                </a>
+                <a href="about.html" class="inline-flex items-center justify-center px-5 md:px-6 py-3 rounded-full border-2 border-transparent bg-white shadow hover:border-accent hover:bg-white/90 transition transform focus-ring text-sm md:text-base">
+                  Learn More
+                </a>
+              </div>
+
+              <div class="mt-4 md:mt-6">
+                <ul class="flex flex-wrap gap-3 md:gap-4 text-xs md:text-sm text-gray-500">
+                  <li class="inline-flex items-center gap-2"><i class="fa-solid fa-check text-primary"></i> Community support groups</li>
+                  <li class="inline-flex items-center gap-2"><i class="fa-solid fa-check text-primary"></i> Evidence-based resources</li>
+                  <li class="inline-flex items-center gap-2"><i class="fa-solid fa-check text-primary"></i> Confidential counseling</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="relative">
+              <div class="rounded-2xl shadow-2xl overflow-hidden bg-white">
+                <img src="assets/Medation.jpeg" alt="Person practicing calming breathing outdoors" class="w-full h-56 sm:h-64 md:h-80 lg:h-96 object-cover" loading="lazy" decoding="async">
+                <div class="p-4 md:p-6">
+                  <h3 class="font-bold text-lg md:text-xl text-secondary mb-2">Join the conversation</h3>
+                  <p class="text-sm md:text-base text-gray-600">Peer groups meet weekly — virtual and in-person options available. Everyone welcome.</p>
+                  <div class="mt-3 md:mt-4">
+                    <a href="community.html" class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary text-white font-semibold focus-ring text-sm md:text-base">
+                      <i class="fa-solid fa-users"></i> Join Community
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              <!-- decorative circles around empty space - hidden on small mobile -->
+              <div class="pointer-events-none absolute inset-0 z-0 hidden sm:block">
+                <span class="absolute -top-14 -right-10 w-24 sm:w-32 h-24 sm:h-32 rounded-full bg-primary/30 blur-xl animate-float"></span>
+                <span class="absolute -bottom-16 -left-14 w-32 sm:w-40 h-32 sm:h-40 rounded-full bg-secondary/25 blur-2xl animate-float"></span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SERVICES -->
+    <section class="relative py-12 md:py-16 bg-gradient-to-br from-blue-50 via-white to-primary/10 overflow-hidden">
+      <div class="max-w-7xl mx-auto px-4 md:px-6">
+        <div class="text-center mb-8 md:mb-12">
+          <h2 class="text-2xl sm:text-3xl md:text-4xl font-bold text-accent">Our Key Services</h2>
+          <p class="mt-2 text-sm md:text-base text-gray-600 max-w-2xl mx-auto">Comprehensive, compassionate, and evidence-based support</p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8">
+          <article class="bg-white rounded-2xl shadow-md p-6 md:p-8 hover:shadow-lg transition transform group focus-within:ring-2 focus-within:ring-accent">
+            <div class="w-14 h-14 md:w-16 md:h-16 rounded-lg bg-gradient-to-br from-primary to-secondary flex items-center justify-center text-white text-xl md:text-2xl mb-4 md:mb-6 animate-float">
+              <i class="fas fa-hands-helping"></i>
+            </div>
+            <h3 class="text-lg md:text-xl font-semibold text-secondary mb-2">Community Support</h3>
+            <p class="text-sm md:text-base text-gray-600 mb-4">Friendly peer-led groups for anxiety, depression, grief, and more.</p>
+            <a href="community.html" class="text-sm font-semibold text-accent inline-flex items-center gap-2 py-2">Learn more <i class="fa-solid fa-arrow-right ml-1"></i></a>
+          </article>
+
+          <article class="bg-white rounded-2xl shadow-md p-6 md:p-8 hover:shadow-lg transition transform group focus-within:ring-2 focus-within:ring-accent">
+            <div class="w-14 h-14 md:w-16 md:h-16 rounded-lg bg-gradient-to-br from-primary to-secondary flex items-center justify-center text-white text-xl md:text-2xl mb-4 md:mb-6 animate-float">
+              <i class="fas fa-book-medical"></i>
+            </div>
+            <h3 class="text-lg md:text-xl font-semibold text-secondary mb-2">Educational Resources</h3>
+            <p class="text-sm md:text-base text-gray-600 mb-4">Clear, evidence-backed content for self-care and recognizing symptoms.</p>
+            <a href="disorders.html" class="text-sm font-semibold text-accent inline-flex items-center gap-2 py-2">Explore <i class="fa-solid fa-arrow-right ml-1"></i></a>
+          </article>
+
+          <article class="bg-white rounded-2xl shadow-md p-6 md:p-8 hover:shadow-lg transition transform group focus-within:ring-2 focus-within:ring-accent">
+            <div class="w-14 h-14 md:w-16 md:h-16 rounded-lg bg-gradient-to-br from-primary to-secondary flex items-center justify-center text-white text-xl md:text-2xl mb-4 md:mb-6 animate-float">
+              <i class="fas fa-user-md"></i>
+            </div>
+            <h3 class="text-lg md:text-xl font-semibold text-secondary mb-2">Professional Counseling</h3>
+            <p class="text-sm md:text-base text-gray-600 mb-4">Schedule confidential sessions with licensed clinicians.</p>
+            <a href="counseling.html" class="text-sm font-semibold text-accent inline-flex items-center gap-2 py-2">Book a session <i class="fa-solid fa-arrow-right ml-1"></i></a>
+          </article>
+        </div>
+
+        <!-- decorative circles backdrop - hidden on small mobile -->
+        <div class="pointer-events-none absolute inset-0 z-0 hidden sm:block">
+          <span class="absolute top-10 -left-12 w-28 sm:w-36 h-28 sm:h-36 rounded-full bg-primary/25 blur-xl animate-float"></span>
+          <span class="absolute bottom-6 -right-14 w-36 sm:w-48 h-36 sm:h-48 rounded-full bg-secondary/20 blur-2xl animate-float"></span>
+        </div>
+      </div>
+    </section>
+
+    <!-- TESTIMONIALS -->
+    <section class="py-12 md:py-16 bg-gradient-to-b from-white to-gray-50">
+      <div class="max-w-7xl mx-auto px-4 md:px-6">
+        <div class="text-center mb-8 md:mb-12">
+          <h2 class="text-2xl sm:text-3xl md:text-4xl font-bold text-accent">Stories of Hope</h2>
+          <p class="mt-2 text-sm md:text-base text-gray-600 max-w-2xl mx-auto">Real experiences from community members</p>
+          <p class="mt-2 text-xs md:text-sm text-gray-500 max-w-2xl mx-auto">Note: The names, photos, and quotes shown here are fictional examples created for this website demo.</p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8">
+          <blockquote class="bg-white rounded-2xl shadow p-6 md:p-8">
+            <p class="text-sm md:text-base text-gray-700 italic">"Finding this community helped me realize I wasn't alone in my struggles with anxiety. The support and resources changed my life."</p>
+            <div class="mt-4 md:mt-6 flex items-center gap-3 md:gap-4">
+              <img src="assets/Sarah.jpeg" alt="Sarah M profile" class="w-10 h-10 md:w-12 md:h-12 rounded-full shadow object-cover object-center" loading="lazy" decoding="async">
+              <div>
+                <strong class="block text-sm md:text-base text-secondary">Sarah M.</strong>
+                <span class="text-xs md:text-sm text-gray-500">Anxiety Support Group</span>
+              </div>
+            </div>
+          </blockquote>
+
+          <blockquote class="bg-white rounded-2xl shadow p-6 md:p-8">
+            <p class="text-sm md:text-base text-gray-700 italic">"The resources here gave me the courage to seek professional help for my depression. I'm in a better place now."</p>
+            <div class="mt-4 md:mt-6 flex items-center gap-3 md:gap-4">
+              <img src="assets/Jamal.jpg" alt="Jamal R profile" class="w-10 h-10 md:w-12 md:h-12 rounded-full shadow object-cover object-center" loading="lazy" decoding="async">
+              <div>
+                <strong class="block text-sm md:text-base text-secondary">Jamal R.</strong>
+                <span class="text-xs md:text-sm text-gray-500">Depression Resources</span>
+              </div>
+            </div>
+          </blockquote>
+        </div>
+
+        <div class="text-center mt-8 md:mt-10">
+          <a href="testimonials.html" class="inline-flex items-center gap-2 px-5 md:px-6 py-3 rounded-full bg-accent text-white font-semibold focus-ring text-sm md:text-base" style="color:#ffffff !important;">
+            Read More Stories
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- BLOG PREVIEW -->
+    <section class="py-12 md:py-16 bg-gradient-to-br from-primary/5 via-secondary/5 to-white">
+      <div class="max-w-7xl mx-auto px-4 md:px-6">
+        <div class="text-center mb-10 md:mb-14">
+          <h2 class="text-2xl sm:text-3xl md:text-4xl font-bold text-accent">Latest Articles</h2>
+          <p class="mt-2 text-sm md:text-base text-gray-600 max-w-2xl mx-auto">Expert insights and practical tips</p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 lg:gap-x-6 md:gap-10 xl:gap-x-12 xl:gap-y-12">
+          <!-- Card 1 -->
+          <article class="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300 flex flex-col h-full">
+            <div class="relative h-48 md:h-56 overflow-hidden">
+              <img src="assets/Medation.jpeg" alt="Mindfulness exercise" class="w-full h-full object-cover hover:scale-105 transition-transform duration-300" loading="lazy" decoding="async">
+            </div>
+            <div class="p-6 md:p-7 flex flex-col gap-4 flex-grow">
+              <h3 class="text-lg font-bold text-secondary leading-snug">5 Mindfulness Techniques for Daily Stress</h3>
+              <p class="text-gray-600 text-sm md:text-base leading-relaxed flex-grow">Simple, science-backed practices to center yourself during stressful moments and build resilience.</p>
+              <a href="blog/mindfulness-techniques.html" class="text-sm font-semibold text-accent inline-flex items-center gap-2 hover:gap-3 transition-all">
+                Read article <i class="fa-solid fa-arrow-right"></i>
+              </a>
+            </div>
+          </article>
+
+          <!-- Card 2 -->
+          <article class="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300 flex flex-col h-full">
+            <div class="relative h-48 md:h-56 overflow-hidden">
+              <img src="assets/Supportgroup.jpeg" alt="Support group" class="w-full h-full object-cover hover:scale-105 transition-transform duration-300" loading="lazy" decoding="async">
+            </div>
+            <div class="p-6 md:p-7 flex flex-col gap-4 flex-grow">
+              <h3 class="text-lg font-bold text-secondary leading-snug">Building a Support Network</h3>
+              <p class="text-gray-600 text-sm md:text-base leading-relaxed flex-grow">Create meaningful connections that support your mental health journey and provide lasting encouragement.</p>
+              <a href="blog/support-network.html" class="text-sm font-semibold text-accent inline-flex items-center gap-2 hover:gap-3 transition-all">
+                Read article <i class="fa-solid fa-arrow-right"></i>
+              </a>
+            </div>
+          </article>
+
+          <!-- Card 3 -->
+          <article class="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300 flex flex-col h-full">
+            <div class="relative h-48 md:h-56 overflow-hidden">
+              <img src="assets/Depression.jpg.jpeg" alt="Someone in thought" class="w-full h-full object-cover hover:scale-105 transition-transform duration-300" loading="lazy" decoding="async">
+            </div>
+            <div class="p-6 md:p-7 flex flex-col gap-4 flex-grow">
+              <h3 class="text-lg font-bold text-secondary leading-snug">Recognizing Depression Symptoms</h3>
+              <p class="text-gray-600 text-sm md:text-base leading-relaxed flex-grow">Learn to identify the warning signs of depression in yourself and loved ones to seek help early.</p>
+              <a href="blog/depression-symptoms.html" class="text-sm font-semibold text-accent inline-flex items-center gap-2 hover:gap-3 transition-all">
+                Read article <i class="fa-solid fa-arrow-right"></i>
+              </a>
+            </div>
+          </article>
+
+          <!-- Cards 4 & 5: centered second row -->
+          <div class="lg:col-span-3 flex justify-center">
+            <div class="w-full max-w-5xl grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-10 lg:px-24">
+              <article class="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300 flex flex-col h-full">
+                <div class="relative h-48 md:h-56 overflow-hidden">
+                  <img src="assets/Goodsleep.jpeg" alt="Sleep routine" class="w-full h-full object-cover hover:scale-105 transition-transform duration-300" loading="lazy" decoding="async">
+                </div>
+                <div class="p-6 md:p-7 flex flex-col gap-4 flex-grow">
+                  <h3 class="text-lg font-bold text-secondary leading-snug">Better Sleep for Mental Wellness</h3>
+                  <p class="text-gray-600 text-sm md:text-base leading-relaxed flex-grow">Practical steps to improve sleep quality and support emotional health.</p>
+                  <a href="blog/sleep-and-wellness.html" class="text-sm font-semibold text-accent inline-flex items-center gap-2 hover:gap-3 transition-all">
+                    Read article <i class="fa-solid fa-arrow-right"></i>
+                  </a>
+                </div>
+              </article>
+
+              <article class="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300 flex flex-col h-full">
+                <div class="relative h-48 md:h-56 overflow-hidden">
+                  <img src="assets/SupportiveFriend.jpeg" alt="Supportive friend" class="w-full h-full object-cover hover:scale-105 transition-transform duration-300" loading="lazy" decoding="async">
+                </div>
+                <div class="p-6 md:p-7 flex flex-col gap-4 flex-grow">
+                  <h3 class="text-lg font-bold text-secondary leading-snug">Talking to a Friend About Anxiety</h3>
+                  <p class="text-gray-600 text-xs md:text-sm leading-relaxed flex-grow">How to open up and ask for help when you're struggling.</p>
+                  <div class="mt-auto">
+                    <a href="blog/talking-to-friends.html" class="text-xs md:text-sm font-semibold text-accent inline-flex items-center gap-2 py-2">Read article <i class="fa-solid fa-arrow-right ml-1"></i></a>
+                  </div>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+
+        <div class="text-center mt-8 md:mt-10">
+          <a href="blog.html" class="inline-flex items-center gap-2 px-5 md:px-6 py-3 rounded-full bg-primary text-white font-semibold focus-ring text-sm md:text-base">
+            View All Articles
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- NEWSLETTER -->
+    <section class="py-12 md:py-16 bg-gradient-to-b from-primary via-secondary to-[#0f1c2e] text-white">
+      <div class="max-w-4xl mx-auto px-4 md:px-6 text-center">
+        <h2 class="text-xl sm:text-2xl md:text-3xl font-bold">Stay updated</h2>
+        <p class="mt-2 text-sm md:text-base text-white/90 mb-4 md:mb-6">Get new articles, mental wellness tips, and event invites directly in your inbox.</p>
+
+        <form class="flex flex-col sm:flex-row gap-3 justify-center" action="#" method="post" onsubmit="return false;">
+          <label for="email" class="sr-only">Email address</label>
+          <input id="email" type="email" required placeholder="Your email address" class="w-full sm:flex-1 px-4 py-3 min-h-[44px] rounded-full text-gray-800 font-medium focus-ring text-sm md:text-base" />
+          <button type="submit" class="px-5 md:px-6 py-3 min-h-[44px] rounded-full bg-primary font-semibold hover:brightness-105 focus-ring text-sm md:text-base">Subscribe</button>
+        </form>
+
+        <p class="mt-3 md:mt-4 text-xs md:text-sm text-white/80">We respect your privacy. Unsubscribe anytime.</p>
+      </div>
+    </section>
+  </main>
+
+  <custom-footer></custom-footer>
+  <noscript>
+    <footer class="bg-white border-t mt-12">
+      <div class="max-w-7xl mx-auto px-6 py-6 text-center text-sm text-gray-600">&copy; 2025 Mindful Horizons Initiative. All rights reserved. <a href="privacy.html" class="underline">Privacy</a></div>
+    </footer>
+  </noscript>
+
+  <!-- keep your component scripts (if they exist they will replace the noscript fallback) -->
+  <script src="components/navbar.js" defer></script>
+  <script src="components/footer.js" defer></script>
+  <script src="script.js" defer></script>
+
+  <!-- small inline script for progressive enhancement (no external deps) -->
+  <script>
+    // Simple progressive enhancement: enable enter-to-submit for newsletter
+    (function(){
+      const form = document.querySelector('form');
+      if(!form) return;
+      form.addEventListener('submit', (e)=> {
+        e.preventDefault();
+        const email = form.querySelector('input[type="email"]').value;
+        // placeholder UX — wire to your backend or mailing provider here
+        alert('Thanks! We would add ' + (email || '[no email]') + ' to the newsletter (demo).');
+      });
+    })();
+  </script>
+</body>
+</html>
+

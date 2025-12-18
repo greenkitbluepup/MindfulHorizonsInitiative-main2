@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Accessibility | Mindful Horizons</title>
+  <link rel="stylesheet" href="output.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-gradient-to-b from-blue-50 via-primary/10 to-white text-accent">
+  <a href="#main" class="skip-link">Skip to content</a>
+  <custom-navbar></custom-navbar>
+  <main id="main" class="max-w-3xl mx-auto px-4 md:px-6 py-12 md:py-16">
+    <h1 class="text-3xl md:text-4xl font-bold">Accessibility Statement</h1>
+    <ul class="list-disc pl-6 mt-4 space-y-2 text-gray-700">
+      <li>WCAG 2.2 AA targets for contrast, keyboard nav, focus styles.</li>
+      <li>Skip link, semantic headings, ARIA landmarks where appropriate.</li>
+      <li>Responsive touch targets (≥44px) and reduced motion where feasible.</li>
+      <li>Alt text for images; clear link text; form labels and errors.</li>
+    </ul>
+    <p class="text-xs text-gray-500 mt-4">Note: Run screen reader and keyboard-only checks during QA.</p>
+  </main>
+  <custom-footer></custom-footer>
+  <script type="module" src="components/navbar.js"></script>
+  <script type="module" src="components/footer.js"></script>
+</body>
+</html>

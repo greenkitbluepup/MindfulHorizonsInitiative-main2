@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>About the Team | Mindful Horizons</title>
+  <link rel="stylesheet" href="output.css">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="vendor/fontawesome/css/all.min.css">
+</head>
+<body class="min-h-screen flex flex-col bg-gradient-to-b from-blue-50 via-primary/10 to-white text-accent">
+  <a href="#main" class="skip-link">Skip to content</a>
+  <custom-navbar></custom-navbar>
+  <main id="main" class="flex-1 max-w-5xl mx-auto px-4 md:px-6 pt-16 pb-16">
+    <header class="mb-10">
+      <div class="relative overflow-hidden rounded-3xl bg-gradient-to-r from-primary to-secondary p-8 md:p-10 shadow-2xl ring-1 ring-white/30">
+        <div class="relative z-10">
+          <h1 class="text-3xl md:text-5xl font-extrabold text-white drop-shadow">Team Roles & Responsibilities</h1>
+          <p class="mt-3 text-white/90 max-w-2xl">
+            Prepared to answer questions about layout, navigation, graphics, media, coding, compatibility, and content.
+          </p>
+        </div>
+      </div>
+    </header>
+    <div class="w-24 h-1 bg-primary/40 rounded-full mx-auto my-10"></div>
+    <section class="grid grid-cols-1 md:grid-cols-2 gap-6">
+      <article class="bg-white rounded-2xl shadow-md p-6 border border-primary/20 hover:shadow-xl hover:-translate-y-1 transition md:min-h-[140px]">
+        <div class="flex items-start gap-4">
+          <div class="w-12 h-12 rounded-xl bg-primary/15 flex items-center justify-center text-secondary text-xl">
+            <i class="fa-solid fa-user-tie"></i>
+          </div>
+          <div>
+            <h2 class="text-xl font-semibold text-secondary">Project Lead</h2>
+            <p class="text-gray-800 font-semibold">Diego Gomez</p>
+            <p class="text-gray-600 mt-1">Coordinates scope, accessibility, cross-browser testing, and submission.</p>
+          </div>
+        </div>
+      </article>
+      <article class="bg-white rounded-2xl shadow-md p-6 border border-primary/20 hover:shadow-xl hover:-translate-y-1 transition md:min-h-[140px]">
+        <div class="flex items-start gap-4">
+          <div class="w-12 h-12 rounded-xl bg-primary/15 flex items-center justify-center text-secondary text-xl">
+            <i class="fa-solid fa-code"></i>
+          </div>
+          <div>
+            <h2 class="text-xl font-semibold text-secondary">Frontend Developer</h2>
+            <p class="text-gray-800 font-semibold">Alexander Wheeler</p>
+            <p class="text-gray-600 mt-1">Implements responsive UI, navigation, and scripting.</p>
+          </div>
+        </div>
+      </article>
+      <article class="bg-white rounded-2xl shadow-md p-6 border border-primary/20 hover:shadow-xl hover:-translate-y-1 transition md:min-h-[140px]">
+        <div class="flex items-start gap-4">
+          <div class="w-12 h-12 rounded-xl bg-primary/15 flex items-center justify-center text-secondary text-xl">
+            <i class="fa-solid fa-pen-nib"></i>
+          </div>
+          <div>
+            <h2 class="text-xl font-semibold text-secondary">Content Designer</h2>
+            <p class="text-gray-800 font-semibold">Giselle Alcaraz</p>
+            <p class="text-gray-600 mt-1">Creates disorder summaries, blog content, and ensures citations.</p>
+          </div>
+        </div>
+      </article>
+      <article class="bg-white rounded-2xl shadow-md p-6 border border-primary/20 hover:shadow-xl hover:-translate-y-1 transition md:min-h-[140px]">
+        <div class="flex items-start gap-4">
+          <div class="w-12 h-12 rounded-xl bg-primary/15 flex items-center justify-center text-secondary text-xl">
+            <i class="fa-solid fa-universal-access"></i>
+          </div>
+          <div>
+            <h2 class="text-xl font-semibold text-secondary">QA & Accessibility</h2>
+            <p class="text-gray-600 mt-1">Runs WCAG checks, keyboard nav, contrast, and screen reader passes.</p>
+          </div>
+        </div>
+      </article>
+    </section>
+    <p class="mt-10 text-center text-sm text-gray-500">
+      This site was designed with accessibility, offline compatibility, and clarity as top priorities.
+    </p>
+  </main>
+  <custom-footer></custom-footer>
+  <script type="module" src="components/navbar.js"></script>
+  <script type="module" src="components/footer.js"></script>
+</body>
+</html>

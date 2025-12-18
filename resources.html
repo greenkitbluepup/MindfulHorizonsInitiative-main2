@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Mental Health Resources | Mindful Horizons Initiative</title>
+  <meta name="description" content="Immediate help and long-term mental health resources — hotlines, national and local supports, and guidance.">
+
+  <!-- Local CSS -->
+  <link rel="stylesheet" href="output.css">
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Local Font Awesome -->
+  <link rel="stylesheet" href="vendor/fontawesome/css/all.min.css">
+
+  <style>
+    .sr-only { position:absolute; width:1px; height:1px; padding:0; margin:-1px; overflow:hidden; clip:rect(0,0,0,0); white-space:nowrap; border:0; }
+    .sr-only:focus, .sr-only:active { position:static; width:auto; height:auto; margin:0; clip:auto; overflow:visible; white-space:normal; }
+    .focus-ring:focus { box-shadow: 0 0 0 3px rgba(66,153,225,0.35); outline: none; }
+  </style>
+</head>
+<body class="bg-gradient-to-b from-blue-50 via-primary/10 to-white text-gray-800 antialiased leading-relaxed relative overflow-x-hidden min-h-screen flex flex-col">
+
+  <!-- Skip to main -->
+  <a href="#main-content" class="sr-only focus-ring p-2 rounded bg-secondary text-white m-4">Skip to main content</a>
+
+  <!-- Navbar (custom component or fallback) -->
+  <custom-navbar></custom-navbar>
+  <noscript>
+    <nav class="bg-secondary text-white p-4" aria-label="Main Navigation">
+      <div class="max-w-7xl mx-auto flex justify-center">
+        <ul class="flex gap-6">
+          <li><a href="index.html" class="font-semibold">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="resources.html" class="font-bold underline">Resources</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+  </noscript>
+
+  <main id="main-content" class="max-w-7xl mx-auto px-6 pt-16 pb-0 flex-1" role="main">
+
+    <!-- Hero / header -->
+    <header class="resource-header mb-12">
+      <div class="relative overflow-hidden rounded-3xl bg-gradient-to-r from-primary to-secondary bg-secondary p-8 md:p-12 shadow-xl">
+        <div class="relative z-10 max-w-5xl mx-auto text-center">
+          <h1 class="text-4xl md:text-5xl font-bold text-white mb-4 drop-shadow-lg">Mental Health Resources</h1>
+          <p class="text-lg md:text-xl text-white/90 mb-6">Immediate help and long-term support — hotlines, national programs, and local services.</p>
+          <div class="mt-6 flex justify-center gap-4">
+            <a href="#emergency" class="inline-block bg-white/90 hover:bg-white text-secondary font-semibold px-6 py-3 rounded-lg transition">Emergency Help</a>
+            <a href="#national" class="inline-block bg-white/10 hover:bg-white/20 text-white font-semibold px-6 py-3 rounded-lg transition">National Resources</a>
+          </div>
+          <div class="mt-8 flex flex-wrap justify-center gap-3">
+            <a href="#emergency" class="px-4 py-2 rounded-full bg-white/90 text-secondary font-semibold shadow-sm hover:shadow">Crisis</a>
+            <a href="#national" class="px-4 py-2 rounded-full bg-white/90 text-secondary font-semibold shadow-sm hover:shadow">National</a>
+            <a href="#local" class="px-4 py-2 rounded-full bg-white/90 text-secondary font-semibold shadow-sm hover:shadow">Local</a>
+          </div>
+        </div>
+
+        <!-- subtle orbs -->
+        <div class="absolute -right-20 -top-20 w-64 h-64 rounded-full bg-white/10"></div>
+        <div class="absolute -left-20 -bottom-20 w-64 h-64 rounded-full bg-white/10"></div>
+      </div>
+    </header>
+
+    <!-- Emergency resources -->
+    <section id="emergency" aria-labelledby="emergency-heading" class="emergency-resources mb-12">
+      <h2 id="emergency-heading" class="text-3xl font-bold text-secondary mb-4 inline-block relative">
+        Emergency Help
+        <span class="block h-1 w-16 bg-primary rounded-full mt-2"></span>
+      </h2>
+      <p class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-red-100 text-red-800 text-sm font-semibold mb-4">
+        <i class="fa-solid fa-triangle-exclamation"></i> If you’re in danger, use these first
+      </p>
+      <p class="text-gray-700 mb-6">If you or someone you know is in immediate danger or in crisis, contact local emergency services or one of the support lines below right away.</p>
+
+      <div class="grid md:grid-cols-2 gap-6">
+        <div class="emergency-card bg-gradient-to-br from-red-50 to-white border-l-4 border-red-500 p-6 rounded-2xl shadow-lg hover:shadow-2xl transition hover:-translate-y-1 transform duration-200">
+          <div class="flex items-center mb-4">
+            <div class="bg-red-500 text-white rounded-full w-12 h-12 flex items-center justify-center mr-4">
+              <i class="fas fa-phone-alt"></i>
+            </div>
+            <div>
+              <h3 class="text-xl font-bold text-red-800">988 Suicide &amp; Crisis Lifeline</h3>
+              <p class="text-sm text-red-700">24/7 confidential support</p>
+            </div>
+          </div>
+          <p class="text-gray-700 mb-4">Free, confidential support available 24/7 for anyone in suicidal crisis or emotional distress.</p>
+          <div class="flex flex-wrap gap-3">
+            <a href="tel:988" class="inline-flex items-center gap-2 bg-red-500 hover:bg-red-600 text-white font-semibold px-4 py-2 rounded-lg">
+              <i class="fas fa-phone"></i> Call 988
+            </a>
+            <a href="https://988lifeline.org" target="_blank" rel="noopener" class="inline-flex items-center gap-2 bg-white/90 hover:bg-white text-red-500 font-semibold px-4 py-2 rounded-lg border border-red-500">
+              <i class="fas fa-globe"></i> Visit Website
+            </a>
+          </div>
+        </div>
+
+        <div class="emergency-card bg-gradient-to-br from-blue-50 to-white border-l-4 border-blue-500 p-6 rounded-2xl shadow-lg hover:shadow-2xl transition hover:-translate-y-1 transform duration-200">
+          <div class="flex items-center mb-4">
+            <div class="bg-blue-500 text-white rounded-full w-12 h-12 flex items-center justify-center mr-4">
+              <i class="fas fa-comments"></i>
+            </div>
+            <div>
+              <h3 class="text-xl font-bold text-blue-800">Crisis Text Line</h3>
+              <p class="text-sm text-blue-700">24/7 text-based support</p>
+            </div>
+          </div>
+          <p class="text-gray-700 mb-4">Text with a trained Crisis Counselor from anywhere in the U.S.</p>
+          <div class="flex flex-wrap gap-3">
+            <!-- sms link kept; behavior depends on device -->
+            <a href="sms:741741?&body=HOME" class="inline-flex items-center gap-2 bg-blue-500 hover:bg-blue-600 text-white font-semibold px-4 py-2 rounded-lg">
+              <i class="fas fa-comment-alt"></i> Text HOME to 741741
+            </a>
+            <a href="https://www.crisistextline.org" target="_blank" rel="noopener" class="inline-flex items-center gap-2 bg-white/90 hover:bg-white text-blue-500 font-semibold px-4 py-2 rounded-lg border border-blue-500">
+              <i class="fas fa-globe"></i> Visit Website
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- National resources -->
+    <section id="national" aria-labelledby="national-heading" class="national-resources mb-12">
+      <h2 id="national-heading" class="text-3xl font-bold text-secondary mb-6 inline-block relative">
+        National Resources
+        <span class="block h-1 w-16 bg-primary rounded-full mt-2"></span>
+      </h2>
+
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div class="resource-card p-6 rounded-2xl shadow-md hover:shadow-lg hover:-translate-y-1 transition border border-transparent hover:border-primary/20">
+          <div class="icon bg-primary/10 text-primary rounded-lg w-12 h-12 flex items-center justify-center mb-4">
+            <i class="fa-solid fa-life-ring text-xl"></i>
+          </div>
+          <h3 class="text-xl font-bold text-secondary mb-2">NAMI Helpline</h3>
+          <p class="text-gray-700 mb-4">National Alliance on Mental Illness information and referral service.</p>
+          <a href="tel:8009506264" class="text-primary font-semibold hover:text-secondary inline-flex items-center gap-2">
+            <i class="fas fa-phone"></i> 800-950-NAMI (6264)
+          </a>
+        </div>
+
+        <div class="resource-card p-6 rounded-2xl shadow-md hover:shadow-lg hover:-translate-y-1 transition border border-gray-200">
+          <div class="icon bg-primary/10 text-primary rounded-lg w-12 h-12 flex items-center justify-center mb-4">
+            <i class="fa-solid fa-location-dot text-xl"></i>
+          </div>
+          <h3 class="text-xl font-bold text-secondary mb-2">SAMHSA Treatment Locator</h3>
+          <p class="text-gray-700 mb-4">Find mental health and substance use treatment facilities.</p>
+          <a href="https://findtreatment.samhsa.gov" target="_blank" rel="noopener" class="text-primary font-semibold hover:text-secondary inline-flex items-center gap-2">
+            <i class="fas fa-globe"></i> FindTreatment.gov
+          </a>
+        </div>
+
+        <div class="resource-card p-6 rounded-2xl shadow-md hover:shadow-lg hover:-translate-y-1 transition border border-gray-200">
+          <div class="icon bg-primary/10 text-primary rounded-lg w-12 h-12 flex items-center justify-center mb-4">
+            <i class="fa-solid fa-heart text-xl"></i>
+          </div>
+          <h3 class="text-xl font-bold text-secondary mb-2">The Trevor Project</h3>
+          <p class="text-gray-700 mb-4">Crisis intervention and suicide prevention for LGBTQ+ youth.</p>
+          <a href="tel:8664887386" class="text-primary font-semibold hover:text-secondary inline-flex items-center gap-2">
+            <i class="fas fa-phone"></i> 866-488-7386
+          </a>
+        </div>
+
+        <div class="resource-card p-6 rounded-2xl shadow-md hover:shadow-lg hover:-translate-y-1 transition border border-gray-200">
+          <div class="icon bg-primary/10 text-primary rounded-lg w-12 h-12 flex items-center justify-center mb-4">
+            <i class="fa-solid fa-flag-usa text-xl"></i>
+          </div>
+          <h3 class="text-xl font-bold text-secondary mb-2">Veterans Crisis Line</h3>
+          <p class="text-gray-700 mb-4">Confidential support for veterans and their families.</p>
+          <a href="tel:8002738255" class="text-primary font-semibold hover:text-secondary inline-flex items-center gap-2">
+            <i class="fas fa-phone"></i> 800-273-8255 (Press 1)
+          </a>
+        </div>
+
+        <div class="resource-card p-6 rounded-2xl shadow-md hover:shadow-lg hover:-translate-y-1 transition border border-gray-200">
+          <div class="icon bg-primary/10 text-primary rounded-lg w-12 h-12 flex items-center justify-center mb-4">
+            <i class="fa-solid fa-house-chimney text-xl"></i>
+          </div>
+          <h3 class="text-xl font-bold text-secondary mb-2">Disaster Distress Helpline</h3>
+          <p class="text-gray-700 mb-4">Crisis counseling for emotional distress related to disasters.</p>
+          <a href="tel:8009855990" class="text-primary font-semibold hover:text-secondary inline-flex items-center gap-2">
+            <i class="fas fa-phone"></i> 800-985-5990
+          </a>
+        </div>
+
+        <div class="resource-card p-6 rounded-2xl shadow-md hover:shadow-lg hover:-translate-y-1 transition border border-gray-200">
+          <div class="icon bg-primary/10 text-primary rounded-lg w-12 h-12 flex items-center justify-center mb-4">
+            <i class="fa-solid fa-apple-whole text-xl"></i>
+          </div>
+          <h3 class="text-xl font-bold text-secondary mb-2">National Eating Disorders Association</h3>
+          <p class="text-gray-700 mb-4">Support for individuals and families affected by eating disorders.</p>
+          <a href="tel:8009312237" class="text-primary font-semibold hover:text-secondary inline-flex items-center gap-2">
+            <i class="fas fa-phone"></i> 800-931-2237
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Local resources -->
+    <section id="local" aria-labelledby="local-heading" class="local-resources bg-white p-8 rounded-3xl shadow-xl mb-0">
+      <h2 id="local-heading" class="text-3xl font-bold text-secondary mb-6 inline-block relative">
+        Local Resources
+        <span class="block h-1 w-16 bg-primary rounded-full mt-2"></span>
+      </h2>
+
+      <div class="mb-8">
+        <label for="location-search" class="block text-gray-700 font-medium mb-2">Find help in your area</label>
+        <div class="bg-gradient-to-br from-primary/10 to-white border border-primary/20 rounded-2xl p-5 shadow-sm max-w-2xl">
+          <div class="relative">
+            <input id="location-search" type="text" placeholder="Enter your city or ZIP code" aria-label="Enter city or ZIP code"
+                   class="w-full px-6 py-4 border border-gray-200 rounded-xl focus:outline-none focus:ring-2 focus:ring-primary shadow-sm">
+            <button id="location-search-btn" class="absolute right-2 top-1/2 -translate-y-1/2 bg-primary hover:bg-secondary text-white font-semibold px-6 py-2 rounded-lg transition flex items-center gap-2">
+              <i class="fas fa-search"></i> Search
+            </button>
+          </div>
+        </div>
+        <p class="text-sm text-gray-500 mt-3">This search is client-side only — replace with your own locator API if desired.</p>
+      </div>
+
+      <div class="grid md:grid-cols-2 gap-8">
+        <div>
+          <h3 class="text-xl font-bold text-secondary mb-4">Community Mental Health Centers</h3>
+          <div class="space-y-4 mt-6">
+            <div class="p-6 bg-white rounded-2xl shadow-md hover:shadow-lg hover:-translate-y-1 transition border border-transparent hover:border-primary/20">
+              <h4 class="font-bold text-gray-800">Horizon Wellness Center</h4>
+              <p class="text-gray-700 mb-2">1234 Main Street, Anytown</p>
+              <a href="tel:5551234567" class="text-primary font-semibold hover:text-secondary">(555) 123-4567</a>
+            </div>
+
+            <div class="p-6 bg-white rounded-2xl shadow-md hover:shadow-lg hover:-translate-y-1 transition border border-transparent hover:border-primary/20">
+              <h4 class="font-bold text-gray-800">Sunrise Behavioral Health</h4>
+              <p class="text-gray-700 mb-2">5678 Oak Avenue, Somewhere</p>
+              <a href="tel:5552345678" class="text-primary font-semibold hover:text-secondary">(555) 234-5678</a>
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <h3 class="text-xl font-bold text-secondary mb-4">Support Groups</h3>
+          <div class="space-y-4 mt-6">
+            <div class="p-6 bg-white rounded-2xl shadow-md hover:shadow-lg hover:-translate-y-1 transition border border-transparent hover:border-primary/20">
+              <h4 class="font-bold text-gray-800">Anxiety &amp; Depression Support Group</h4>
+              <p class="text-gray-700 mb-2">Meets every Tuesday at 6pm</p>
+              <p class="text-gray-700">Community Center - 789 Pine Road</p>
+            </div>
+
+            <div class="p-6 bg-white rounded-2xl shadow-md hover:shadow-lg hover:-translate-y-1 transition border border-transparent hover:border-primary/20">
+              <h4 class="font-bold text-gray-800">Grief &amp; Loss Support Group</h4>
+              <p class="text-gray-700 mb-2">Meets every Thursday at 7pm</p>
+              <p class="text-gray-700">Healing Hearts Center - 321 Elm Street</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="mt-10 p-6 rounded-2xl bg-blue-50 border border-blue-100 text-sm text-gray-700">
+      <strong>Note:</strong> This site provides information and support resources, but it does not replace professional medical advice or emergency services.
+    </div>
+
+  </main>
+
+  <!-- Footer -->
+  <custom-footer></custom-footer>
+  <noscript>
+    <footer class="bg-secondary text-white p-6 mt-12">
+      <div class="container mx-auto text-center">
+        &copy; 2025 Mindful Horizons Initiative. All rights reserved. — <a href="privacy.html" class="underline text-white">Privacy</a>
+      </div>
+    </footer>
+  </noscript>
+
+  <!-- Local scripts (deferred) -->
+  <script src="components/navbar.js" defer></script>
+  <script src="components/footer.js" defer></script>
+  <script src="script.js" defer></script>
+
+</body>
+</html>
+

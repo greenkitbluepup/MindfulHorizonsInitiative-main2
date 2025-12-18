@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contact Us | Mindful Horizons</title>
+  <link rel="stylesheet" href="output.css">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="vendor/fontawesome/css/all.min.css">
+</head>
+<body class="min-h-screen flex flex-col bg-light text-accent">
+  <a href="#main" class="skip-link">Skip to content</a>
+  <custom-navbar></custom-navbar>
+
+  <main id="main" class="flex-1 max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 pt-8 md:pt-12 pb-12 md:pb-16 space-y-10">
+    <header class="relative overflow-hidden rounded-3xl bg-gradient-to-r from-primary to-secondary text-white px-6 py-8 md:px-10 md:py-10 shadow-2xl border border-white/10 max-w-4xl mx-auto mb-6 md:mb-8">
+      <div class="absolute -top-24 -right-24 w-72 h-72 rounded-full bg-white/10 blur-3xl"></div>
+      <div class="absolute -bottom-24 -left-28 w-80 h-80 rounded-full bg-black/10 blur-3xl"></div>
+      <div class="relative text-center space-y-4 max-w-3xl mx-auto">
+        <span class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/15 text-xs md:text-sm font-semibold uppercase tracking-wide">Contact</span>
+        <h1 class="text-3xl md:text-4xl font-extrabold leading-tight">Get in Touch</h1>
+        <p class="text-white/90 text-base md:text-lg max-w-2xl mx-auto">Reach out with questions about groups, counseling options, or resources. We typically respond within 1–2 business days.</p>
+      </div>
+    </header>
+
+    <section class="grid md:grid-cols-2 gap-6 items-start bg-white/90 backdrop-blur rounded-3xl shadow-lg border border-primary/10 p-6 md:p-8">
+      <div class="space-y-4">
+        <h2 class="text-2xl font-bold text-secondary">Contact form</h2>
+        <form class="space-y-4">
+          <label class="block">
+            <span class="font-semibold text-secondary">Full name</span>
+            <input type="text" name="name" class="mt-1 w-full rounded-2xl border border-gray-200 px-4 py-3 focus:outline-none focus:ring-2 focus:ring-primary/60" required>
+          </label>
+          <label class="block">
+            <span class="font-semibold text-secondary">Email</span>
+            <input type="email" name="email" class="mt-1 w-full rounded-2xl border border-gray-200 px-4 py-3 focus:outline-none focus:ring-2 focus:ring-primary/60" required>
+          </label>
+          <label class="block">
+            <span class="font-semibold text-secondary">Subject</span>
+            <input type="text" name="subject" class="mt-1 w-full rounded-2xl border border-gray-200 px-4 py-3 focus:outline-none focus:ring-2 focus:ring-primary/60">
+          </label>
+          <label class="block">
+            <span class="font-semibold text-secondary">Message</span>
+            <textarea name="message" rows="4" class="mt-1 w-full rounded-2xl border border-gray-200 px-4 py-3 focus:outline-none focus:ring-2 focus:ring-primary/60" placeholder="How can we help?"></textarea>
+          </label>
+          <button type="submit" class="w-full px-5 py-3 rounded-full bg-primary text-white font-semibold hover:brightness-110 transition shadow-md focus:outline-none focus:ring-2 focus:ring-primary/40">Send message</button>
+        </form>
+      </div>
+      <div class="space-y-4">
+        <h2 class="text-2xl font-bold text-secondary">Quick contact</h2>
+        <div class="space-y-3 text-gray-700">
+          <p><i class="fa-solid fa-phone text-primary mr-2"></i>(555) 123-4567</p>
+          <p><i class="fa-solid fa-envelope text-primary mr-2"></i>hello@mindfulhorizons.example</p>
+          <p><i class="fa-solid fa-clock text-primary mr-2"></i>Mon–Fri, 9:00–6:00</p>
+          <p><i class="fa-solid fa-location-dot text-primary mr-2"></i>Springfield & Virtual</p>
+        </div>
+        <div class="rounded-2xl border border-primary/10 bg-primary/5 p-4 space-y-2">
+          <p class="font-semibold text-secondary">Crisis support</p>
+          <p class="text-sm text-gray-700">If you are in immediate danger, call 911. For crisis support, call or text 988.</p>
+          <div class="flex flex-wrap gap-2">
+            <a href="tel:911" class="px-4 py-2 rounded-full bg-red-600 text-white font-semibold hover:bg-red-700 transition"><i class="fa-solid fa-phone"></i> Call 911</a>
+            <a href="tel:988" class="px-4 py-2 rounded-full bg-white text-red-700 font-semibold border border-red-300 hover:bg-red-100 transition"><i class="fa-solid fa-message"></i> Call/Text 988</a>
+          </div>
+        </div>
+        <div class="text-sm text-gray-600 bg-white rounded-2xl border border-primary/10 p-4 shadow-sm">
+          <p><strong>Demo only:</strong> This site is for a school project. No real services, appointments, or clinical advice are provided here.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <custom-footer></custom-footer>
+  <script src="components/navbar.js" defer></script>
+  <script src="components/footer.js" defer></script>
+  <script src="script.js" defer></script>
+</body>
+</html>

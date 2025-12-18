@@ -1,0 +1,504 @@
+/* Custom color variables and utilities */
+:root {
+  --primary: #9fd3c7;
+  --secondary: #385170;
+  --accent: #142d4c;
+  --light: #ececec;
+  --animate-pulse: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+/* @font-face declarations for offline fonts */
+/* Inter - Variable Font (handles all weights) */
+@font-face {
+  font-family: 'Inter';
+  src: url('./fonts/Inter/static/Inter-VariableFont_opsz,wght.ttf') format('truetype');
+  font-weight: 100 900; /* Variable font supports range */
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Inter - Italic Variable Font */
+@font-face {
+  font-family: 'Inter';
+  src: url('./fonts/Inter/static/Inter-Italic-VariableFont_opsz,wght.ttf') format('truetype');
+  font-weight: 100 900;
+  font-style: italic;
+  font-display: swap;
+}
+
+/* Montserrat - Variable Font (handles all weights) */
+@font-face {
+  font-family: 'Montserrat';
+  src: url('./fonts/Montserrat/static/Montserrat-VariableFont_wght.ttf') format('truetype');
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Montserrat - Italic Variable Font */
+@font-face {
+  font-family: 'Montserrat';
+  src: url('./fonts/Montserrat/static/Montserrat-Italic-VariableFont_wght.ttf') format('truetype');
+  font-weight: 100 900;
+  font-style: italic;
+  font-display: swap;
+}
+
+/* Gradient system setup */
+.bg-gradient-to-r {
+  background-image: linear-gradient(to right, var(--tw-gradient-stops));
+}
+
+.bg-gradient-to-br {
+  background-image: linear-gradient(to bottom right, var(--tw-gradient-stops));
+}
+
+/* Color utilities - Background */
+.bg-primary {
+  background-color: var(--primary) !important;
+}
+
+.bg-secondary {
+  background-color: var(--secondary) !important;
+}
+
+.bg-accent {
+  background-color: var(--accent) !important;
+}
+
+.bg-light {
+  background-color: var(--light) !important;
+}
+
+/* Color utilities - Text */
+.text-primary {
+  color: var(--primary) !important;
+}
+
+.text-secondary {
+  color: var(--secondary) !important;
+}
+
+.text-accent {
+  color: var(--accent) !important;
+}
+
+/* Text opacity utilities */
+.text-white\/90 {
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.text-white\/80 {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.text-gray-700 {
+  color: rgb(55, 65, 81);
+}
+
+.text-gray-500 {
+  color: rgb(107, 114, 128);
+}
+
+/* Border utilities */
+.border-secondary {
+  border-color: var(--secondary) !important;
+}
+
+.border-accent {
+  border-color: var(--accent) !important;
+}
+
+/* Gradient utilities - From */
+.from-primary {
+  --tw-gradient-from: var(--primary);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(159, 211, 199, 0));
+}
+
+.from-secondary {
+  --tw-gradient-from: var(--secondary);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(56, 81, 112, 0));
+}
+
+/* Gradient utilities - To */
+.to-secondary {
+  --tw-gradient-to: var(--secondary);
+}
+
+.to-accent {
+  --tw-gradient-to: var(--accent);
+}
+
+/* Animate pulse */
+.animate-pulse {
+  animation: var(--animate-pulse);
+}
+
+@keyframes pulse {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+}
+
+/* Hover state overrides */
+.hover\:bg-secondary:hover {
+  background-color: var(--secondary) !important;
+}
+
+.hover\:bg-accent:hover {
+  background-color: var(--accent) !important;
+}
+
+/* Shadow utilities */
+.hover\:shadow-3xl:hover {
+  box-shadow: 0 50px 100px -15px rgba(0, 0, 0, 0.3) !important;
+}
+
+.shadow-3xl {
+  box-shadow: 0 50px 100px -15px rgba(0, 0, 0, 0.3) !important;
+}
+
+.shadow-2xl {
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+}
+
+.shadow-lg {
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -4px rgba(0, 0, 0, 0.1);
+}
+
+.shadow-md {
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -2px rgba(0, 0, 0, 0.1);
+}
+
+/* Accessibility: skip link */
+.skip-link{
+  position:absolute;
+  left:-999px;
+  top:auto;
+  width:1px;
+  height:1px;
+  overflow:hidden;
+}
+.skip-link:focus{
+  left:1rem;
+  top:1rem;
+  width:auto;
+  height:auto;
+  padding:.75rem 1rem;
+  background:#385170;
+  color:#fff;
+  border-radius:.75rem;
+  z-index:50;
+}
+
+/* ===== Global document setup (SAFE) ===== */
+html, body {
+  margin: 0;
+  padding: 0;
+  min-height: 100%;
+}
+
+html {
+  background: #f6fbff;
+}
+
+/* Use ONE background source only (body) */
+body {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  line-height: 1.6;
+  overflow-x: hidden;
+
+  background-color: #f6fbff;
+  background-image: linear-gradient(
+    to bottom,
+    #f6fbff 0%,
+    #eef4f9 25%,
+    #f9fbfe 50%,
+    #eaf2f8 75%,
+    #f7fbff 100%
+  );
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-attachment: scroll;
+}
+
+/* Custom elements MUST be block-level */
+custom-navbar,
+custom-footer {
+  display: block;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+/* Heading typography - uses Montserrat (loaded via Google Fonts) */
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+h1 {
+  margin-top: 0;
+  margin-bottom: 0.5em;
+  font-weight: 700;
+  letter-spacing: -0.5px;
+}
+
+h2 {
+  margin-top: 0;
+  margin-bottom: 0.5em;
+  font-weight: 700;
+  letter-spacing: -0.25px;
+}
+
+h3, h4, h5, h6 {
+  margin-top: 0;
+  margin-bottom: 0.5em;
+  font-weight: 600;
+}
+
+/* Body text - uses Inter */
+p {
+  color: rgb(107, 114, 128);
+  margin-bottom: 10px;
+  margin-top: 5px;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+.card {
+  max-width: 620px;
+  margin: 0 auto;
+  padding: 16px;
+  border: 1px solid lightgray;
+  border-radius: 16px;
+}
+
+.card p:last-child {
+  margin-bottom: 0;
+}
+
+/* Font utility classes for documentation */
+.font-inter {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+.font-montserrat {
+  font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+/* Typography variants */
+.text-heading-lg {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2.25rem;
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: -0.5px;
+}
+
+.text-heading-md {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.875rem;
+  font-weight: 700;
+  line-height: 1.3;
+  letter-spacing: -0.25px;
+}
+
+.text-heading-sm {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.5rem;
+  font-weight: 700;
+  line-height: 1.4;
+}
+
+.text-body {
+  font-family: 'Inter', sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.6;
+}
+
+.text-body-sm {
+  font-family: 'Inter', sans-serif;
+  font-size: 0.875rem;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+/* Resource header styles */
+.resource-header {
+  position: relative;
+  overflow: hidden;
+}
+
+.resource-header h1 {
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Hero section styles */
+.hero {
+  position: relative;
+  z-index: 1;
+}
+
+.hero::before,
+.hero::after {
+  z-index: -1;
+}
+
+/* Emergency card styles */
+.emergency-card {
+  transition: all 0.3s ease;
+}
+
+.emergency-card:hover {
+  transform: translateY(-5px);
+}
+
+/* Resource card styles */
+.resource-card {
+  position: relative;
+  overflow: hidden;
+}
+
+.resource-card::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background: linear-gradient(to right, #9fd3c7, #385170);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.3s ease;
+}
+
+.resource-card:hover::after {
+  transform: scaleX(1);
+}
+
+/* Location search styles */
+#location-search {
+  transition: all 0.3s ease;
+}
+
+#location-search:focus {
+  box-shadow: 0 0 0 3px rgba(159, 211, 199, 0.3);
+}
+
+/* Testimonial card styles */
+.testimonial-card {
+  transition: all 0.3s ease;
+}
+
+.testimonial-card:hover {
+  transform: translateY(-5px);
+}
+
+/* Featured testimonial styles */
+.featured-testimonial {
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.featured-testimonial::after {
+  content: "";
+  position: absolute;
+  top: -50px;
+  right: -50px;
+  width: 200px;
+  height: 200px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  z-index: -1;
+}
+
+.featured-testimonial::before {
+  content: "";
+  position: absolute;
+  bottom: -80px;
+  left: -80px;
+  width: 250px;
+  height: 250px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  z-index: -1;
+}
+
+/* Image fallbacks */
+img {
+  background-color: #f0f0f0;
+  min-height: 100px;
+}
+
+img:not([src]),
+img[src=""] {
+  content: "Image not loaded";
+  background: linear-gradient(135deg, #f0f0f0 25%, #e0e0e0 25%, #e0e0e0 50%, #f0f0f0 50%, #f0f0f0 75%, #e0e0e0 75%, #e0e0e0);
+  background-size: 40px 40px;
+}
+
+/* Helper spacing for stacked sections */
+.section-gap {
+  margin-bottom: 32px;
+}
+
+@media (min-width: 768px) {
+  .section-gap {
+    margin-bottom: 40px;
+  }
+}
+
+/* Newsletter section */
+.newsletter {
+  position: relative;
+  z-index: 1;
+}
+
+.newsletter::before,
+.newsletter::after {
+  z-index: -1;
+}
+
+/* Form input styles */
+input[type="email"] {
+  background-color: white;
+  border: none;
+  color: #1f2937;
+}
+
+input[type="email"]::placeholder {
+  color: #9ca3af;
+}
+
+input[type="email"]:focus {
+  background-color: white;
+}
+
+/* Space between navbar and page content */
+#main {
+  padding-top: 24px;
+}
+
+@media (min-width: 768px) {
+  #main {
+    padding-top: 40px;
+  }
+}
+
+/* Extra spacing for Stories of Hope header */
+#stories-hero {
+  padding-top: 32px;
+}
+
+@media (min-width: 768px) {
+  #stories-hero {
+    padding-top: 48px;
+  }
+}
