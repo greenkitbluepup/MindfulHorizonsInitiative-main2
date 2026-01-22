@@ -203,6 +203,11 @@ html, body {
 
 html {
   background: #f6fbff;
+  scroll-behavior: smooth;
+}
+
+section[id] {
+  scroll-margin-top: 6rem;
 }
 
 /* Use ONE background source only (body) */
@@ -453,6 +458,23 @@ img[src=""] {
   .section-gap {
     margin-bottom: 40px;
   }
+}
+
+.filter-chip{
+  border:1px solid rgba(0,0,0,0.08);
+  background:white;
+  padding:.55rem .9rem;
+  border-radius:999px;
+  font-size:.875rem;
+  font-weight:600;
+  color:#334155;
+  transition:transform .12s ease, box-shadow .12s ease, background-color .12s ease;
+}
+.filter-chip:hover{ transform: translateY(-1px); box-shadow:0 6px 20px rgba(0,0,0,.06); }
+.filter-chip.is-active{
+  background: rgba(86, 169, 178, 0.14);
+  border-color: rgba(86, 169, 178, 0.25);
+  color:#0f172a;
 }
 
 /* Newsletter section */

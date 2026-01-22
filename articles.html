@@ -1,0 +1,354 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>All Articles | Mindful Horizons</title>
+  <link rel="stylesheet" href="output.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-gradient-to-b from-blue-50 via-primary/10 to-white text-accent">
+  <a href="#main" class="skip-link">Skip to content</a>
+  <custom-navbar></custom-navbar>
+
+  <main id="main" class="max-w-7xl mx-auto px-4 md:px-6 py-10 md:py-14">
+    <!-- Breadcrumb -->
+    <nav aria-label="Breadcrumb" class="text-sm text-gray-600">
+      <ol class="flex flex-wrap items-center gap-2">
+        <li><a class="hover:underline" href="index.html">Home</a></li>
+        <li aria-hidden="true">/</li>
+        <li class="text-gray-800 font-semibold" aria-current="page">Articles</li>
+      </ol>
+    </nav>
+
+    <!-- Header -->
+    <header class="mt-6">
+      <h1 class="text-4xl md:text-5xl font-extrabold tracking-tight text-accent">All Articles</h1>
+      <p class="mt-3 text-lg text-gray-700 max-w-3xl">
+        Browse Mindful Horizons articles in one place. Use these guides to build daily skills, learn about mental health, and find support.
+      </p>
+
+      <!-- Controls -->
+      <div class="mt-6 grid gap-4 lg:grid-cols-[1fr_auto] items-start">
+        <!-- Search -->
+        <div class="relative">
+          <label for="article-search" class="sr-only">Search articles</label>
+          <input
+            id="article-search"
+            type="search"
+            placeholder="Search articles (mindfulness, depression, stress...)"
+            class="w-full rounded-2xl border border-primary/15 bg-white px-5 py-4 pr-12 shadow-sm focus:outline-none focus:ring-2 focus:ring-primary/40"
+          />
+          <span class="absolute right-4 top-1/2 -translate-y-1/2 text-gray-500">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </span>
+        </div>
+
+        <!-- Result count -->
+        <div class="rounded-2xl border border-primary/10 bg-white px-5 py-4 text-sm text-gray-700 shadow-sm">
+          <span class="font-semibold text-gray-900" id="article-count">0</span> articles shown
+        </div>
+      </div>
+
+      <!-- Filter chips -->
+      <div class="mt-4 flex flex-wrap gap-2" id="category-filters" role="tablist" aria-label="Article categories">
+        <button class="filter-chip is-active" data-filter="all" type="button">All</button>
+        <button class="filter-chip" data-filter="Wellness" type="button">Wellness</button>
+        <button class="filter-chip" data-filter="Awareness" type="button">Awareness</button>
+        <button class="filter-chip" data-filter="Coping Skills" type="button">Coping Skills</button>
+        <button class="filter-chip" data-filter="Self-Care" type="button">Self-Care</button>
+        <button class="filter-chip" data-filter="Community" type="button">Community</button>
+        <button class="filter-chip" data-filter="Therapy" type="button">Therapy</button>
+      </div>
+    </header>
+
+    <!-- Featured (optional, remove if you do not want it) -->
+    <section class="mt-10">
+      <div class="rounded-3xl border border-primary/15 bg-gradient-to-r from-primary/10 via-sky-50 to-white p-6 md:p-8 shadow-sm">
+        <div class="flex flex-col md:flex-row md:items-center md:justify-between gap-4">
+          <div>
+            <p class="text-sm font-semibold text-accent">Featured guide</p>
+            <h2 class="mt-1 text-2xl font-bold text-accent">Start here: Mindfulness basics</h2>
+            <p class="mt-2 text-gray-700 max-w-2xl">
+              A simple introduction to mindfulness and practical techniques you can use on busy days.
+            </p>
+          </div>
+          <a href="blog/mindfulness-techniques.html"
+             class="inline-flex items-center justify-center gap-2 rounded-2xl bg-secondary px-5 py-3 font-semibold text-white shadow hover:opacity-95 transition">
+            Read featured <i class="fa-solid fa-arrow-right"></i>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Grid -->
+    <section class="mt-10">
+      <div id="article-grid" class="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+        <a
+          href="blog/mindfulness-techniques.html"
+          class="article-card group rounded-3xl border border-primary/10 bg-white shadow-sm hover:shadow-md transition overflow-hidden"
+          data-category="Wellness"
+          data-tags="Wellness,Stress Management,Mindfulness"
+          data-title="5 Mindfulness Techniques for Daily Stress"
+        >
+          <div class="relative h-44">
+            <img src="assets/Medation.jpeg" alt="Person meditating"
+                 class="h-full w-full object-cover" loading="lazy" />
+            <div class="absolute inset-0 bg-gradient-to-t from-black/35 to-transparent"></div>
+          </div>
+
+          <div class="p-5">
+            <div class="flex flex-wrap items-center gap-2">
+              <span class="rounded-full bg-primary/10 px-3 py-1 text-xs font-semibold text-accent">Wellness</span>
+              <span class="rounded-full bg-sky-100 px-3 py-1 text-xs font-semibold text-sky-900">Stress Management</span>
+            </div>
+
+            <h3 class="mt-3 text-xl font-bold text-accent group-hover:underline">
+              5 Mindfulness Techniques for Daily Stress
+            </h3>
+
+            <p class="mt-2 text-gray-700">
+              Practical breathing, grounding, movement, and thought skills for everyday stress.
+            </p>
+
+            <div class="mt-4 flex items-center justify-between text-sm text-gray-600">
+              <span class="font-semibold">Read article</span>
+              <span class="inline-flex items-center gap-2">
+                ~7 min <i class="fa-solid fa-arrow-right"></i>
+              </span>
+            </div>
+          </div>
+        </a>
+
+        <a
+          href="blog/depression-symptoms.html"
+          class="article-card group rounded-3xl border border-primary/10 bg-white shadow-sm hover:shadow-md transition overflow-hidden"
+          data-category="Awareness"
+          data-tags="Awareness,Depression,Signs"
+          data-title="Recognizing Depression Symptoms"
+        >
+          <div class="relative h-44">
+            <img src="assets/depression-detail.jpeg" alt="Person sitting thoughtfully"
+                 class="h-full w-full object-cover" loading="lazy" />
+            <div class="absolute inset-0 bg-gradient-to-t from-black/35 to-transparent"></div>
+          </div>
+
+          <div class="p-5">
+            <div class="flex flex-wrap items-center gap-2">
+              <span class="rounded-full bg-primary/10 px-3 py-1 text-xs font-semibold text-accent">Awareness</span>
+              <span class="rounded-full bg-indigo-100 px-3 py-1 text-xs font-semibold text-indigo-900">Depression</span>
+            </div>
+
+            <h3 class="mt-3 text-xl font-bold text-accent group-hover:underline">
+              Recognizing Depression Symptoms
+            </h3>
+
+            <p class="mt-2 text-gray-700">
+              Understand common emotional and physical signs and when to seek support.
+            </p>
+
+            <div class="mt-4 flex items-center justify-between text-sm text-gray-600">
+              <span class="font-semibold">Read article</span>
+              <span class="inline-flex items-center gap-2">
+                ~6 min <i class="fa-solid fa-arrow-right"></i>
+              </span>
+            </div>
+          </div>
+        </a>
+
+        <a
+          href="blog/sleep-and-wellness.html"
+          class="article-card group rounded-3xl border border-primary/10 bg-white shadow-sm hover:shadow-md transition overflow-hidden"
+          data-category="Self-Care"
+          data-tags="Self-Care,Sleep,Wellness"
+          data-title="Sleep and Wellness"
+        >
+          <div class="relative h-44">
+            <img src="assets/Goodsleep.jpeg" alt="Person resting with a blanket"
+                 class="h-full w-full object-cover" loading="lazy" />
+            <div class="absolute inset-0 bg-gradient-to-t from-black/35 to-transparent"></div>
+          </div>
+
+          <div class="p-5">
+            <div class="flex flex-wrap items-center gap-2">
+              <span class="rounded-full bg-primary/10 px-3 py-1 text-xs font-semibold text-accent">Self-Care</span>
+            </div>
+
+            <h3 class="mt-3 text-xl font-bold text-accent group-hover:underline">
+              Sleep and Wellness
+            </h3>
+
+            <p class="mt-2 text-gray-700">
+              How sleep affects mood, focus, and energy, plus simple habits that help.
+            </p>
+
+            <div class="mt-4 flex items-center justify-between text-sm text-gray-600">
+              <span class="font-semibold">Read article</span>
+              <span class="inline-flex items-center gap-2">
+                ~5 min <i class="fa-solid fa-arrow-right"></i>
+              </span>
+            </div>
+          </div>
+        </a>
+
+        <a
+          href="blog/support-network.html"
+          class="article-card group rounded-3xl border border-primary/10 bg-white shadow-sm hover:shadow-md transition overflow-hidden"
+          data-category="Community"
+          data-tags="Community,Support,Relationships"
+          data-title="Building a Support Network"
+        >
+          <div class="relative h-44">
+            <img src="assets/Supportgroup.jpeg" alt="People in a support group"
+                 class="h-full w-full object-cover" loading="lazy" />
+            <div class="absolute inset-0 bg-gradient-to-t from-black/35 to-transparent"></div>
+          </div>
+
+          <div class="p-5">
+            <div class="flex flex-wrap items-center gap-2">
+              <span class="rounded-full bg-primary/10 px-3 py-1 text-xs font-semibold text-accent">Community</span>
+            </div>
+
+            <h3 class="mt-3 text-xl font-bold text-accent group-hover:underline">
+              Building a Support Network
+            </h3>
+
+            <p class="mt-2 text-gray-700">
+              Ways to find trusted people and keep supportive connections strong.
+            </p>
+
+            <div class="mt-4 flex items-center justify-between text-sm text-gray-600">
+              <span class="font-semibold">Read article</span>
+              <span class="inline-flex items-center gap-2">
+                ~6 min <i class="fa-solid fa-arrow-right"></i>
+              </span>
+            </div>
+          </div>
+        </a>
+
+        <a
+          href="blog/talking-to-friends.html"
+          class="article-card group rounded-3xl border border-primary/10 bg-white shadow-sm hover:shadow-md transition overflow-hidden"
+          data-category="Coping Skills"
+          data-tags="Coping Skills,Anxiety,Communication"
+          data-title="Talking to a Friend About Anxiety"
+        >
+          <div class="relative h-44">
+            <img src="assets/SupportiveFriend.jpeg" alt="Two friends talking"
+                 class="h-full w-full object-cover" loading="lazy" />
+            <div class="absolute inset-0 bg-gradient-to-t from-black/35 to-transparent"></div>
+          </div>
+
+          <div class="p-5">
+            <div class="flex flex-wrap items-center gap-2">
+              <span class="rounded-full bg-primary/10 px-3 py-1 text-xs font-semibold text-accent">Coping Skills</span>
+            </div>
+
+            <h3 class="mt-3 text-xl font-bold text-accent group-hover:underline">
+              Talking to a Friend About Anxiety
+            </h3>
+
+            <p class="mt-2 text-gray-700">
+              How to start the conversation with empathy, clarity, and support.
+            </p>
+
+            <div class="mt-4 flex items-center justify-between text-sm text-gray-600">
+              <span class="font-semibold">Read article</span>
+              <span class="inline-flex items-center gap-2">
+                ~5 min <i class="fa-solid fa-arrow-right"></i>
+              </span>
+            </div>
+          </div>
+        </a>
+
+        <a
+          href="blog/therapy-expectations.html"
+          class="article-card group rounded-3xl border border-primary/10 bg-white shadow-sm hover:shadow-md transition overflow-hidden"
+          data-category="Therapy"
+          data-tags="Therapy,Treatment,Support"
+          data-title="What to Expect in Therapy"
+        >
+          <div class="relative h-44">
+            <img src="assets/IndividualTherapy.jpeg" alt="Therapy session in a calm room"
+                 class="h-full w-full object-cover" loading="lazy" />
+            <div class="absolute inset-0 bg-gradient-to-t from-black/35 to-transparent"></div>
+          </div>
+
+          <div class="p-5">
+            <div class="flex flex-wrap items-center gap-2">
+              <span class="rounded-full bg-primary/10 px-3 py-1 text-xs font-semibold text-accent">Therapy</span>
+            </div>
+
+            <h3 class="mt-3 text-xl font-bold text-accent group-hover:underline">
+              What to Expect in Therapy
+            </h3>
+
+            <p class="mt-2 text-gray-700">
+              A clear walkthrough of intake, session flow, and how progress is tracked.
+            </p>
+
+            <div class="mt-4 flex items-center justify-between text-sm text-gray-600">
+              <span class="font-semibold">Read article</span>
+              <span class="inline-flex items-center gap-2">
+                ~7 min <i class="fa-solid fa-arrow-right"></i>
+              </span>
+            </div>
+          </div>
+        </a>
+      </div>
+
+      <div id="no-results" class="hidden mt-10 rounded-3xl border border-primary/10 bg-white p-8 text-center shadow-sm">
+        <h3 class="text-xl font-bold text-accent">No articles found</h3>
+        <p class="mt-2 text-gray-700">Try a different keyword or choose "All" categories.</p>
+      </div>
+    </section>
+  </main>
+
+  <custom-footer></custom-footer>
+  <script src="components/navbar.js" defer></script>
+  <script src="components/footer.js" defer></script>
+  <script>
+    const search = document.getElementById("article-search");
+    const chips = document.querySelectorAll(".filter-chip");
+    const cards = Array.from(document.querySelectorAll(".article-card"));
+    const countEl = document.getElementById("article-count");
+    const noResults = document.getElementById("no-results");
+
+    let activeFilter = "all";
+
+    function applyFilters() {
+      const q = (search.value || "").trim().toLowerCase();
+      let shown = 0;
+
+      cards.forEach(card => {
+        const title = (card.dataset.title || "").toLowerCase();
+        const tags = (card.dataset.tags || "").toLowerCase();
+        const category = (card.dataset.category || "");
+
+        const matchesText = !q || title.includes(q) || tags.includes(q);
+        const matchesCategory = activeFilter === "all" || category === activeFilter;
+
+        const show = matchesText && matchesCategory;
+        card.classList.toggle("hidden", !show);
+        if (show) shown++;
+      });
+
+      countEl.textContent = String(shown);
+      noResults.classList.toggle("hidden", shown !== 0);
+    }
+
+    chips.forEach(btn => {
+      btn.addEventListener("click", () => {
+        chips.forEach(b => b.classList.remove("is-active"));
+        btn.classList.add("is-active");
+        activeFilter = btn.dataset.filter;
+        applyFilters();
+      });
+    });
+
+    search.addEventListener("input", applyFilters);
+
+    countEl.textContent = String(cards.length);
+  </script>
+</body>
+</html>
