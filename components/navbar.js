@@ -1,10 +1,16 @@
 class CustomNavbar extends HTMLElement {
   connectedCallback() {
+    const repoName = 'MindfulHorizonsInitiative-main2';
+    const pathParts = window.location.pathname.split('/').filter(Boolean);
+    const repoIndex = pathParts.indexOf(repoName);
+    const depthFromRepo = repoIndex >= 0 ? Math.max(pathParts.length - repoIndex - 2, 0) : Math.max(pathParts.length - 1, 0);
+    const basePath = depthFromRepo > 0 ? '../'.repeat(depthFromRepo) : '';
+
     this.innerHTML = `
 <nav class="sticky top-0 w-full z-50 border-b shadow-sm bg-gradient-to-r from-white/95 via-white/90 to-white/95 backdrop-blur">
   <div class="max-w-7xl mx-auto px-4 md:px-6 py-3">
     <div class="flex items-center justify-between gap-4">
-      <a href="index.html" class="flex items-center font-extrabold text-accent tracking-tight hover:text-primary transition-colors duration-150 focus:outline-none focus:ring-2 focus:ring-primary/40 rounded">
+      <a href="${basePath}index.html" class="flex items-center font-extrabold text-accent tracking-tight hover:text-primary transition-colors duration-150 focus:outline-none focus:ring-2 focus:ring-primary/40 rounded">
         <span class="text-xl md:text-2xl">Mindful Horizons</span>
       </a>
       <div class="flex items-center gap-3">
@@ -12,18 +18,18 @@ class CustomNavbar extends HTMLElement {
         <div class="hidden md:flex items-center">
           <!-- Primary nav -->
           <ul id="navPrimary" class="flex items-center gap-3 lg:gap-4 text-sm md:text-[0.95rem]">
-            <li><a href="disorders.html" class="px-3 py-2 rounded hover:bg-primary/10 hover:text-primary hover:underline underline-offset-4 decoration-2 transition">Disorders</a></li>
-            <li><a href="resources.html" class="px-3 py-2 rounded hover:bg-primary/10 hover:text-primary hover:underline underline-offset-4 decoration-2 transition">Resources</a></li>
-            <li><a href="articles.html" class="px-3 py-2 rounded hover:bg-primary/10 hover:text-primary hover:underline underline-offset-4 decoration-2 transition">Articles</a></li>
-            <li><a href="community.html" class="px-3 py-2 rounded hover:bg-primary/10 hover:text-primary hover:underline underline-offset-4 decoration-2 transition">Community</a></li>
-            <li><a href="counseling.html" class="px-3 py-2 rounded hover:bg-primary/10 hover:text-primary hover:underline underline-offset-4 decoration-2 transition">Counseling</a></li>
-            <li><a href="blog.html" class="px-3 py-2 rounded hover:bg-primary/10 hover:text-primary hover:underline underline-offset-4 decoration-2 transition">Blog</a></li>
+            <li><a href="${basePath}disorders.html" class="px-3 py-2 rounded hover:bg-primary/10 hover:text-primary hover:underline underline-offset-4 decoration-2 transition">Disorders</a></li>
+            <li><a href="${basePath}resources.html" class="px-3 py-2 rounded hover:bg-primary/10 hover:text-primary hover:underline underline-offset-4 decoration-2 transition">Resources</a></li>
+            <li><a href="${basePath}articles.html" class="px-3 py-2 rounded hover:bg-primary/10 hover:text-primary hover:underline underline-offset-4 decoration-2 transition">Articles</a></li>
+            <li><a href="${basePath}community.html" class="px-3 py-2 rounded hover:bg-primary/10 hover:text-primary hover:underline underline-offset-4 decoration-2 transition">Community</a></li>
+            <li><a href="${basePath}counseling.html" class="px-3 py-2 rounded hover:bg-primary/10 hover:text-primary hover:underline underline-offset-4 decoration-2 transition">Counseling</a></li>
+            <li><a href="${basePath}blog.html" class="px-3 py-2 rounded hover:bg-primary/10 hover:text-primary hover:underline underline-offset-4 decoration-2 transition">Blog</a></li>
           </ul>
           <!-- Secondary nav -->
           <ul id="navSecondary" class="flex items-center gap-2 ml-4 pl-4 border-l text-xs md:text-sm text-secondary/90">
-            <li><a href="about.html" class="px-2 py-2 rounded hover:text-secondary hover:bg-secondary/5 hover:underline underline-offset-4 decoration-2 transition">About</a></li>
-            <li><a href="accessibility.html" class="px-2 py-2 rounded hover:text-secondary hover:bg-secondary/5 hover:underline underline-offset-4 decoration-2 transition">Accessibility</a></li>
-            <li><a href="works-cited.html" class="px-2 py-2 rounded hover:text-secondary hover:bg-secondary/5 hover:underline underline-offset-4 decoration-2 transition">Works Cited</a></li>
+            <li><a href="${basePath}about.html" class="px-2 py-2 rounded hover:text-secondary hover:bg-secondary/5 hover:underline underline-offset-4 decoration-2 transition">About</a></li>
+            <li><a href="${basePath}accessibility.html" class="px-2 py-2 rounded hover:text-secondary hover:bg-secondary/5 hover:underline underline-offset-4 decoration-2 transition">Accessibility</a></li>
+            <li><a href="${basePath}works-cited.html" class="px-2 py-2 rounded hover:text-secondary hover:bg-secondary/5 hover:underline underline-offset-4 decoration-2 transition">Works Cited</a></li>
           </ul>
         </div>
       </div>
@@ -34,20 +40,20 @@ class CustomNavbar extends HTMLElement {
       <div>
         <p class="text-xs uppercase tracking-wide text-gray-500 mb-1">Main</p>
         <ul class="space-y-1 text-sm">
-          <li><a href="disorders.html" class="block px-3 py-2 rounded hover:bg-primary/10">Disorders</a></li>
-          <li><a href="resources.html" class="block px-3 py-2 rounded hover:bg-primary/10">Resources</a></li>
-          <li><a href="articles.html" class="block px-3 py-2 rounded hover:bg-primary/10">Articles</a></li>
-          <li><a href="community.html" class="block px-3 py-2 rounded hover:bg-primary/10">Community</a></li>
-          <li><a href="counseling.html" class="block px-3 py-2 rounded hover:bg-primary/10">Counseling</a></li>
-          <li><a href="blog.html" class="block px-3 py-2 rounded hover:bg-primary/10">Blog</a></li>
+          <li><a href="${basePath}disorders.html" class="block px-3 py-2 rounded hover:bg-primary/10">Disorders</a></li>
+          <li><a href="${basePath}resources.html" class="block px-3 py-2 rounded hover:bg-primary/10">Resources</a></li>
+          <li><a href="${basePath}articles.html" class="block px-3 py-2 rounded hover:bg-primary/10">Articles</a></li>
+          <li><a href="${basePath}community.html" class="block px-3 py-2 rounded hover:bg-primary/10">Community</a></li>
+          <li><a href="${basePath}counseling.html" class="block px-3 py-2 rounded hover:bg-primary/10">Counseling</a></li>
+          <li><a href="${basePath}blog.html" class="block px-3 py-2 rounded hover:bg-primary/10">Blog</a></li>
         </ul>
       </div>
       <div class="pt-2 border-t">
         <p class="text-xs uppercase tracking-wide text-gray-500 mb-1">More</p>
         <ul class="space-y-1 text-sm">
-          <li><a href="about.html" class="block px-3 py-2 rounded hover:bg-secondary/10">About</a></li>
-          <li><a href="accessibility.html" class="block px-3 py-2 rounded hover:bg-secondary/10">Accessibility</a></li>
-          <li><a href="works-cited.html" class="block px-3 py-2 rounded hover:bg-secondary/10">Works Cited</a></li>
+          <li><a href="${basePath}about.html" class="block px-3 py-2 rounded hover:bg-secondary/10">About</a></li>
+          <li><a href="${basePath}accessibility.html" class="block px-3 py-2 rounded hover:bg-secondary/10">Accessibility</a></li>
+          <li><a href="${basePath}works-cited.html" class="block px-3 py-2 rounded hover:bg-secondary/10">Works Cited</a></li>
         </ul>
       </div>
     </div>
