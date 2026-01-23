@@ -19,7 +19,7 @@
     .focus-ring:focus { box-shadow: 0 0 0 3px rgba(66,153,225,0.35); outline: none; }
   </style>
 </head>
-<body class="bg-gradient-to-b from-blue-50 via-primary/10 to-white text-gray-800 antialiased leading-relaxed relative overflow-x-hidden min-h-screen flex flex-col">
+<body class="bg-gradient-to-b from-blue-50 via-primary/10 to-white text-gray-800 antialiased leading-relaxed relative overflow-x-hidden min-h-screen flex flex-col resources-page">
 
   <!-- Skip to main -->
   <a href="#main-content" class="sr-only focus-ring p-2 rounded bg-secondary text-white m-4">Skip to main content</a>
@@ -199,7 +199,7 @@
     </section>
 
     <!-- Local resources -->
-    <section id="local" aria-labelledby="local-heading" class="local-resources bg-white p-8 rounded-3xl shadow-xl mb-0">
+    <section id="local" aria-labelledby="local-heading" class="local-resources bg-white/90 backdrop-blur p-8 rounded-3xl shadow-xl mb-0">
       <h2 id="local-heading" class="text-3xl font-bold text-secondary mb-6 inline-block relative">
         Local Resources
         <span class="block h-1 w-16 bg-primary rounded-full mt-2"></span>
@@ -275,7 +275,6 @@
   <!-- Local scripts (deferred) -->
   <script src="components/navbar.js" defer></script>
   <script src="components/footer.js" defer></script>
-  <script src="script.js" defer></script>
 
 </body>
 </html>
