@@ -618,3 +618,8 @@ textarea:focus {
 .btn-clear:hover {
   background-color: rgba(15, 23, 42, 0.08);
 }
+
+/* Prevent sticky nav from covering anchor targets */
+:where(article[id]) {
+  scroll-margin-top: 6.5rem;
+}

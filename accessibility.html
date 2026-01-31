@@ -11,18 +11,71 @@
   <a href="#main" class="skip-link">Skip to content</a>
   <custom-navbar></custom-navbar>
   <main id="main" class="max-w-3xl mx-auto px-4 md:px-6 py-12 md:py-16">
-    <h1 class="text-3xl md:text-4xl font-bold">Accessibility Statement</h1>
-    <ul class="list-disc pl-6 mt-4 space-y-2 text-gray-700">
-      <li>WCAG 2.2 AA targets for contrast, keyboard nav, focus styles.</li>
-      <li>Skip link, semantic headings, ARIA landmarks where appropriate.</li>
-      <li>Responsive touch targets (≥44px) and reduced motion where feasible.</li>
-      <li>Alt text for images; clear link text; form labels and errors.</li>
-    </ul>
-    <p class="text-xs text-gray-500 mt-4">Note: Run screen reader and keyboard-only checks during QA.</p>
+    <header class="space-y-3">
+      <h1 class="text-3xl md:text-4xl font-extrabold text-secondary">Accessibility Statement</h1>
+      <p class="text-gray-700 leading-relaxed">
+        Mindful Horizons is committed to making this website accessible and usable for as many people as possible.
+        We aim to follow modern accessibility best practices and continuously improve based on feedback.
+      </p>
+
+      <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/70 border border-primary/30 text-secondary text-sm font-semibold shadow-sm w-fit">
+        <span aria-hidden="true">?</span>
+        Target: WCAG 2.2 AA (best effort)
+      </div>
+    </header>
+
+    <section class="mt-8 bg-white/80 backdrop-blur rounded-3xl border border-primary/10 shadow p-6 md:p-8">
+      <h2 class="text-xl md:text-2xl font-extrabold text-secondary">Measures we've taken</h2>
+      <ul class="list-disc pl-6 mt-4 space-y-2 text-gray-700">
+        <li><strong>Keyboard navigation:</strong> skip link, visible focus styles, and logical tab order.</li>
+        <li><strong>Semantic structure:</strong> headings in order and landmarks where appropriate.</li>
+        <li><strong>Readable design:</strong> strong contrast targets, responsive layout, and clear typography.</li>
+        <li><strong>Usable forms:</strong> labels, helpful instructions, and clear link text.</li>
+        <li><strong>Media support:</strong> alt text for informative images and icons marked decorative when appropriate.</li>
+        <li><strong>Motion awareness:</strong> animations reduced where feasible for users who prefer reduced motion.</li>
+        <li><strong>Touch targets:</strong> interactive elements sized for easier tapping on mobile (aiming for 44px+).</li>
+      </ul>
+    </section>
+
+    <section class="mt-6 bg-white/80 backdrop-blur rounded-3xl border border-primary/10 shadow p-6 md:p-8">
+      <h2 class="text-xl md:text-2xl font-extrabold text-secondary">Known limitations</h2>
+      <p class="text-gray-700 mt-3 leading-relaxed">
+        This is a school-project website and may contain accessibility gaps. If you encounter an issue, please let us know
+        so we can improve it.
+      </p>
+      <ul class="list-disc pl-6 mt-4 space-y-2 text-gray-700">
+        <li>Some third-party icons or embedded content may have limited accessibility controls.</li>
+        <li>Color contrast may vary slightly across devices and displays.</li>
+      </ul>
+    </section>
+
+    <section class="mt-6 bg-white/80 backdrop-blur rounded-3xl border border-primary/10 shadow p-6 md:p-8">
+      <h2 class="text-xl md:text-2xl font-extrabold text-secondary">Feedback and contact</h2>
+      <p class="text-gray-700 mt-3 leading-relaxed">
+        If you experience difficulty using this site, please reach out through our
+        <a href="contact.html" class="underline text-primary font-semibold">Contact</a> page and include:
+      </p>
+      <ul class="list-disc pl-6 mt-4 space-y-2 text-gray-700">
+        <li>The page you were on</li>
+        <li>What you were trying to do</li>
+        <li>Your device/browser (if you know it)</li>
+        <li>Any assistive technology you use (optional)</li>
+      </ul>
+    </section>
+
+    <section class="mt-6 bg-white/80 backdrop-blur rounded-3xl border border-primary/10 shadow p-6 md:p-8">
+      <h2 class="text-xl md:text-2xl font-extrabold text-secondary">Testing approach</h2>
+      <p class="text-gray-700 mt-3 leading-relaxed">
+        We review pages using keyboard-only navigation and basic screen-reader checks when possible, and we test across
+        common screen sizes (mobile, tablet, desktop). Accessibility is treated as an ongoing process, not a one-time task.
+      </p>
+      <p class="text-xs text-gray-500 mt-4">
+        Last updated: <span id="a11y-date">2026-01-31</span>
+      </p>
+    </section>
   </main>
   <custom-footer></custom-footer>
   <script src="components/navbar.js" defer></script>
   <script src="components/footer.js" defer></script>
 </body>
 </html>
-
