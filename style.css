@@ -623,3 +623,24 @@ textarea:focus {
 :where(article[id]) {
   scroll-margin-top: 6.5rem;
 }
+
+/* Performance mode: reduce expensive effects on weaker devices */
+@media (prefers-reduced-motion: reduce) {
+  .animate-float,
+  .animate-pulse {
+    animation: none !important;
+  }
+}
+
+@media (max-width: 640px) {
+  .blur-3xl {
+    filter: blur(24px) !important;
+  }
+}
+
+/* Avoid heavy blur + transparency stacks on small screens */
+@media (max-width: 768px) {
+  .glass {
+    backdrop-filter: none !important;
+  }
+}

@@ -26,8 +26,8 @@
   <custom-navbar></custom-navbar>
 
   <!-- Decorative gradient shapes (non-critical, keeps same vibe) -->
-  <div aria-hidden="true" class="absolute top-0 left-0 w-96 h-96 bg-primary/30 rounded-full blur-3xl -z-10 -translate-x-1/4 -translate-y-1/4 animate-pulse"></div>
-  <div aria-hidden="true" class="absolute bottom-0 right-0 w-80 h-80 bg-secondary/25 rounded-full blur-3xl -z-10 translate-x-1/4 translate-y-1/4 animate-pulse"></div>
+  <div aria-hidden="true" class="absolute top-0 left-0 w-96 h-96 bg-primary/30 rounded-full blur-3xl -z-10 -translate-x-1/4 -translate-y-1/4"></div>
+  <div aria-hidden="true" class="absolute bottom-0 right-0 w-80 h-80 bg-secondary/25 rounded-full blur-3xl -z-10 translate-x-1/4 translate-y-1/4"></div>
 
   <main id="main-content" class="container mx-auto px-4 sm:px-6 lg:px-8 py-12 md:py-16" role="main">
 
@@ -74,7 +74,7 @@
         <!-- Anxiety -->
         <article class="bg-white/90 backdrop-blur rounded-3xl shadow-lg overflow-hidden hover:shadow-2xl transition transform hover:-translate-y-1 relative group border border-primary/10" aria-labelledby="anx-card-title">
           <div class="absolute inset-x-0 bottom-0 h-1 bg-gradient-to-r from-primary to-secondary opacity-0 group-hover:opacity-100 transition"></div>
-          <img src="assets/Medation.jpeg" alt="Abstract illustration for anxiety" class="w-full h-44 object-cover" loading="lazy">
+          <picture><source type="image/webp" srcset="assets/Medation.webp"><img src="assets/Medation.jpeg" alt="Abstract illustration for anxiety" class="w-full h-44 object-cover" loading="lazy"></picture>
           <div class="p-6 space-y-3 min-h-[220px] flex flex-col">
             <div class="flex items-center justify-between text-xs font-semibold uppercase tracking-wide text-secondary/80">
               <span class="px-3 py-1 rounded-full bg-primary/10 text-secondary">Common</span>
@@ -92,7 +92,7 @@
         <!-- Depression -->
         <article class="bg-white/90 backdrop-blur rounded-3xl shadow-lg overflow-hidden hover:shadow-2xl transition transform hover:-translate-y-1 relative group border border-primary/10" aria-labelledby="dep-card-title">
           <div class="absolute inset-x-0 bottom-0 h-1 bg-gradient-to-r from-secondary to-primary opacity-0 group-hover:opacity-100 transition"></div>
-          <img src="assets/depression-card.jpeg" alt="Abstract illustration for depression" class="w-full h-44 object-cover" loading="lazy">
+          <picture><source type="image/webp" srcset="assets/depression-card.webp"><img src="assets/depression-card.jpeg" alt="Abstract illustration for depression" class="w-full h-44 object-cover" loading="lazy"></picture>
           <div class="p-6 space-y-3 min-h-[220px] flex flex-col">
             <div class="flex items-center justify-between text-xs font-semibold uppercase tracking-wide text-secondary/80">
               <span class="px-3 py-1 rounded-full bg-primary/10 text-secondary">Mood</span>
@@ -110,7 +110,7 @@
         <!-- PTSD -->
         <article class="bg-white/90 backdrop-blur rounded-3xl shadow-lg overflow-hidden hover:shadow-2xl transition transform hover:-translate-y-1 relative group border border-primary/10" aria-labelledby="ptsd-card-title">
           <div class="absolute inset-x-0 bottom-0 h-1 bg-gradient-to-r from-secondary to-primary opacity-0 group-hover:opacity-100 transition"></div>
-          <img src="assets/ptsd-card.jpeg" alt="Abstract illustration for PTSD" class="w-full h-44 object-cover" loading="lazy">
+          <picture><source type="image/webp" srcset="assets/ptsd-card.webp"><img src="assets/ptsd-card.jpeg" alt="Abstract illustration for PTSD" class="w-full h-44 object-cover" loading="lazy"></picture>
           <div class="p-6 space-y-3 min-h-[220px] flex flex-col">
             <div class="flex items-center justify-between text-xs font-semibold uppercase tracking-wide text-secondary/80">
               <span class="px-3 py-1 rounded-full bg-primary/10 text-secondary">Trauma</span>
@@ -128,7 +128,7 @@
         <!-- Bipolar -->
         <article class="bg-white/90 backdrop-blur rounded-3xl shadow-lg overflow-hidden hover:shadow-2xl transition transform hover:-translate-y-1 relative group border border-primary/10" aria-labelledby="bip-card-title">
           <div class="absolute inset-x-0 bottom-0 h-1 bg-gradient-to-r from-primary to-secondary opacity-0 group-hover:opacity-100 transition"></div>
-          <img src="assets/bipolar-card.jpeg" alt="Abstract illustration for bipolar disorder" class="w-full h-44 object-cover" loading="lazy">
+          <picture><source type="image/webp" srcset="assets/bipolar-card.webp"><img src="assets/bipolar-card.jpeg" alt="Abstract illustration for bipolar disorder" class="w-full h-44 object-cover" loading="lazy"></picture>
           <div class="p-6 space-y-3 min-h-[220px] flex flex-col">
             <div class="flex items-center justify-between text-xs font-semibold uppercase tracking-wide text-secondary/80">
               <span class="px-3 py-1 rounded-full bg-primary/10 text-secondary">Mood</span>
@@ -146,7 +146,7 @@
         <!-- OCD -->
         <article class="bg-white/90 backdrop-blur rounded-3xl shadow-lg overflow-hidden hover:shadow-2xl transition transform hover:-translate-y-1 relative group border border-primary/10" aria-labelledby="ocd-card-title">
           <div class="absolute inset-x-0 bottom-0 h-1 bg-gradient-to-r from-secondary to-primary opacity-0 group-hover:opacity-100 transition"></div>
-          <img src="assets/ocd-card.jpg" alt="Abstract illustration for OCD" class="w-full h-44 object-cover" loading="lazy">
+          <picture><source type="image/webp" srcset="assets/ocd-card.webp"><img src="assets/ocd-card.jpg" alt="Abstract illustration for OCD" class="w-full h-44 object-cover" loading="lazy"></picture>
           <div class="p-6 space-y-3 min-h-[220px] flex flex-col">
             <div class="flex items-center justify-between text-xs font-semibold uppercase tracking-wide text-secondary/80">
               <span class="px-3 py-1 rounded-full bg-primary/10 text-secondary">Behavior</span>
@@ -206,7 +206,7 @@
       <article id="anxiety" class="bg-white/90 backdrop-blur p-6 md:p-10 rounded-3xl shadow-lg border border-primary/10">
         <div class="flex flex-col md:flex-row gap-6">
           <div class="md:w-1/3">
-            <img src="assets/anxiety.jpeg" alt="Person experiencing anxiety" class="w-full rounded-2xl shadow-md" loading="lazy">
+            <picture><source type="image/webp" srcset="assets/anxiety.webp"><img src="assets/anxiety.jpeg" alt="Person experiencing anxiety" class="w-full rounded-2xl shadow-md" loading="lazy"></picture>
           </div>
           <div class="md:w-2/3">
             <h2 class="text-3xl font-heading font-bold text-secondary mb-4">Anxiety Disorders</h2>
@@ -236,7 +236,7 @@
       <article id="depression" class="bg-primary/5 backdrop-blur p-6 md:p-10 rounded-3xl shadow-lg border border-primary/10">
         <div class="flex flex-col md:flex-row-reverse gap-6">
           <div class="md:w-1/3">
-            <img src="assets/depression-detail.jpeg" alt="Person experiencing depression" class="w-full rounded-2xl shadow-md" loading="lazy">
+            <picture><source type="image/webp" srcset="assets/depression-detail.webp"><img src="assets/depression-detail.jpeg" alt="Person experiencing depression" class="w-full rounded-2xl shadow-md" loading="lazy"></picture>
           </div>
           <div class="md:w-2/3">
             <h2 class="text-3xl font-heading font-bold text-secondary mb-4">Depression</h2>
@@ -270,7 +270,7 @@
       <article id="ptsd" class="bg-white/90 backdrop-blur p-6 md:p-10 rounded-3xl shadow-lg border border-primary/10">
         <div class="flex flex-col md:flex-row gap-6">
           <div class="md:w-1/3">
-            <img src="assets/ptsd-detail.jpeg" alt="Person reflecting after trauma" class="w-full rounded-2xl shadow-md" loading="lazy">
+            <picture><source type="image/webp" srcset="assets/ptsd-detail.webp"><img src="assets/ptsd-detail.jpeg" alt="Person reflecting after trauma" class="w-full rounded-2xl shadow-md" loading="lazy"></picture>
           </div>
           <div class="md:w-2/3">
             <h2 class="text-3xl font-heading font-bold text-secondary mb-4">Post-Traumatic Stress Disorder (PTSD)</h2>
@@ -299,7 +299,7 @@
       <article id="bipolar" class="bg-primary/5 backdrop-blur p-6 md:p-10 rounded-3xl shadow-lg border border-primary/10">
         <div class="flex flex-col md:flex-row-reverse gap-6">
           <div class="md:w-1/3">
-            <img src="assets/bipolar-card.jpeg" alt="Person experiencing mood swings" class="w-full rounded-2xl shadow-md" loading="lazy">
+            <picture><source type="image/webp" srcset="assets/bipolar-card.webp"><img src="assets/bipolar-card.jpeg" alt="Person experiencing mood swings" class="w-full rounded-2xl shadow-md" loading="lazy"></picture>
           </div>
           <div class="md:w-2/3">
             <h2 class="text-3xl font-heading font-bold text-secondary mb-4">Bipolar Disorder</h2>
@@ -327,7 +327,7 @@
       <article id="ocd" class="bg-white/90 backdrop-blur p-6 md:p-10 rounded-3xl shadow-lg border border-primary/10">
         <div class="flex flex-col md:flex-row gap-6">
           <div class="md:w-1/3">
-            <img src="assets/ocd-detail.jpeg" alt="Person managing OCD" class="w-full rounded-2xl shadow-md" loading="lazy">
+            <picture><source type="image/webp" srcset="assets/ocd-detail.webp"><img src="assets/ocd-detail.jpeg" alt="Person managing OCD" class="w-full rounded-2xl shadow-md" loading="lazy"></picture>
           </div>
           <div class="md:w-2/3">
             <h2 class="text-3xl font-heading font-bold text-secondary mb-4">Obsessive-Compulsive Disorder (OCD)</h2>
@@ -355,7 +355,7 @@
       <article id="schizophrenia" class="bg-primary/5 backdrop-blur p-6 md:p-10 rounded-3xl shadow-lg border border-primary/10">
         <div class="flex flex-col md:flex-row-reverse gap-6">
           <div class="md:w-1/3">
-            <img src="assets/schizophrenia-detail.jpeg" alt="Person receiving support for schizophrenia" class="w-full rounded-2xl shadow-md" loading="lazy">
+            <picture><source type="image/webp" srcset="assets/schizophrenia-detail.webp"><img src="assets/schizophrenia-detail.jpeg" alt="Person receiving support for schizophrenia" class="w-full rounded-2xl shadow-md" loading="lazy"></picture>
           </div>
           <div class="md:w-2/3">
             <h2 class="text-3xl font-heading font-bold text-secondary mb-4">Schizophrenia</h2>
@@ -391,4 +391,6 @@
   <script src="script.js" defer></script>
 </body>
 </html>
+
+
 
