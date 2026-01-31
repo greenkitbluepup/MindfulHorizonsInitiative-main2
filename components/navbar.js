@@ -23,7 +23,6 @@ class CustomNavbar extends HTMLElement {
             <li><a href="${basePath}articles.html" class="px-3 py-2 rounded hover:bg-primary/10 hover:text-primary hover:underline underline-offset-4 decoration-2 transition">Articles</a></li>
             <li><a href="${basePath}community.html" class="px-3 py-2 rounded hover:bg-primary/10 hover:text-primary hover:underline underline-offset-4 decoration-2 transition">Community</a></li>
             <li><a href="${basePath}counseling.html" class="px-3 py-2 rounded hover:bg-primary/10 hover:text-primary hover:underline underline-offset-4 decoration-2 transition">Counseling</a></li>
-            <li><a href="${basePath}blog.html" class="px-3 py-2 rounded hover:bg-primary/10 hover:text-primary hover:underline underline-offset-4 decoration-2 transition">Blog</a></li>
           </ul>
           <!-- Secondary nav -->
           <ul id="navSecondary" class="flex items-center gap-2 ml-4 pl-4 border-l text-xs md:text-sm text-secondary/90">
@@ -45,7 +44,6 @@ class CustomNavbar extends HTMLElement {
           <li><a href="${basePath}articles.html" class="block px-3 py-2 rounded hover:bg-primary/10">Articles</a></li>
           <li><a href="${basePath}community.html" class="block px-3 py-2 rounded hover:bg-primary/10">Community</a></li>
           <li><a href="${basePath}counseling.html" class="block px-3 py-2 rounded hover:bg-primary/10">Counseling</a></li>
-          <li><a href="${basePath}blog.html" class="block px-3 py-2 rounded hover:bg-primary/10">Blog</a></li>
         </ul>
       </div>
       <div class="pt-2 border-t">
